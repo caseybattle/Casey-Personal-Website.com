@@ -1,73 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aura Design Studio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              script: ['Sacramento', 'cursive'],
-            },
-            colors: {
-              'aura-green': '#2D4A43',
-              'aura-dark': '#0f1110',
-              'aura-glass': 'rgba(255, 255, 255, 0.05)',
-              'aura-border': 'rgba(255, 255, 255, 0.1)',
-            },
-            animation: {
-              'fade-in': 'fadeIn 1s ease-out',
-            },
-            keyframes: {
-              fadeIn: {
-                '0%': { opacity: '0', transform: 'translateY(10px)' },
-                '100%': { opacity: '1', transform: 'translateY(0)' },
-              }
-            }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>CLX Studios | Premium Web Design & Development in Atlanta</title>
+  <meta name="description"
+    content="CLX Studios is an award-winning web design and development agency. We craft stunning, high-performance digital experiences for brands that want to stand out." />
+  <meta name="keywords"
+    content="web design, web development, SEO, digital agency, premium websites, Atlanta web design, UI/UX design, branding" />
+  <meta name="author" content="CLX Studios" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://clxstudios.com/" />
+  <meta property="og:title" content="CLX Studios | Premium Web Design & Development" />
+  <meta property="og:description"
+    content="We craft stunning, high-performance digital experiences for brands that want to stand out." />
+  <meta property="og:image" content="https://clxstudios.com/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://clxstudios.com/" />
+  <meta property="twitter:title" content="CLX Studios | Premium Web Design & Development" />
+  <meta property="twitter:description"
+    content="We craft stunning, high-performance digital experiences for brands that want to stand out." />
+  <meta property="twitter:image" content="https://clxstudios.com/og-image.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Sacramento&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'], // Switched to Outfit for premium feel
+            script: ['Sacramento', 'cursive'],
           },
+          colors: {
+            'aura-green': '#2D4A43',
+            'aura-dark': '#0f1110',
+            'aura-glass': 'rgba(255, 255, 255, 0.05)',
+            'aura-border': 'rgba(255, 255, 255, 0.1)',
+          },
+          animation: {
+            'fade-in': 'fadeIn 1s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            }
+          }
         },
-      }
-    </script>
-    <style>
-      body {
-        background-color: #0f1110;
-        color: #ffffff;
-        overflow-x: hidden;
-      }
-      /* Custom scrollbar */
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #0f1110;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #333;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
-  }
-}
-</script>
+      },
+    }
+  </script>
+  <style>
+    body {
+      background-color: #0f1110;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0f1110;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "CLX Studios",
+      "image": "https://clxstudios.com/og-image.jpg",
+      "@id": "https://clxstudios.com",
+      "url": "https://clxstudios.com",
+      "telephone": "+1-555-555-5555",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Creative Way",
+        "addressLocality": "Atlanta",
+        "addressRegion": "GA",
+        "postalCode": "30301",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.7490,
+        "longitude": -84.3880
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/clxstudios",
+        "https://www.instagram.com/clxstudios",
+        "https://www.linkedin.com/company/clxstudios"
+      ]
+    }
+  </script>
 </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>

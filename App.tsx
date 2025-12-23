@@ -1,25 +1,28 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Work from './components/Work';
-import Services from './components/Services';
-import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
 import Footer from './components/Footer';
+import SmoothScroll from './components/SmoothScroll';
+import Cursor from './components/Cursor';
+import Home from './pages/Home';
+import BlogPost from './pages/BlogPost';
+import BlogArchive from './pages/BlogArchive';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-aura-dark text-white font-sans selection:bg-orange-500 selection:text-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <Work />
-        <Services />
-        <Testimonials />
-        <Pricing />
+    <SmoothScroll>
+      <div className="min-h-screen bg-aura-dark text-white font-sans selection:bg-orange-500 selection:text-white cursor-none">
+        <Cursor />
+        <Navbar />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/blog" element={<BlogArchive />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+          </Routes>
+        </main>
         <Footer />
-      </main>
-    </div>
+      </div>
+    </SmoothScroll>
   );
 };
 
