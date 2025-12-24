@@ -156,11 +156,9 @@ const Hero: React.FC = () => {
 
         </div>
       </div>
-    </div>
-    </div >
 
-  {/* Inline Styles for the Carousel Animation */ }
-  < style > {`
+      {/* Inline Styles for the Carousel Animation */}
+      <style>{`
         @keyframes carousel {
           0% { transform: translateX(0); }
           100% { transform: translateX(-100%); }
@@ -181,8 +179,8 @@ const Hero: React.FC = () => {
            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
-      `}</style >
-    </section >
+      `}</style>
+    </section>
   );
 };
 
