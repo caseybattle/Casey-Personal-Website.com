@@ -164,7 +164,7 @@ const Pricing: React.FC = () => {
   return (
     <section className="py-32 px-4 md:px-8 bg-[#0f1110] relative">
       <div className="max-w-7xl mx-auto">
-        <Reveal>
+        <Reveal width="100%">
           <div className="flex flex-col items-center text-center mb-16">
             <span className="mb-4 px-3 py-1 rounded-full border border-white/10 text-[10px] font-bold tracking-widest uppercase bg-white/5 text-gray-400">
               Plain English Pricing
