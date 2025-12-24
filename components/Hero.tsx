@@ -137,14 +137,11 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Featured Clients Card - Offset and overlapping ON TOP - Pro Alignment */}
-          <div className="relative z-20 -mt-6 w-[90%] self-end translate-x-16 bg-[#1a1a1a]/95 backdrop-blur-xl border border-white/10 p-6 rounded-3xl shadow-2xl animate-fade-in overflow-hidden hover:scale-[1.02] transition-transform duration-500" style={{ animationDelay: '0.2s' }}>
-            <p className="text-xs text-gray-400 uppercase tracking-wider mb-4">Featured Clients</p>
-
-            {/* Infinite Scroll Carousel */}
+          {/* Featured Clients Carousel - Positioned Below */}
+          <div className="relative z-20 w-[110%] self-end translate-x-8 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-xl animate-fade-in overflow-hidden hover:border-white/20 transition-colors mt-2" style={{ animationDelay: '0.4s' }}>
+            <p className="text-xs text-gray-500 uppercase tracking-wider mb-3 pl-2">Featured Clients</p>
             <div className="relative flex overflow-hidden w-full mask-linear">
               <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
-                {/* Triple the list to ensure smooth infinite loop without gaps */}
                 {[...clients, ...clients, ...clients].map((client, index) => (
                   <span key={index} className={`text-white/80 text-lg ${client.className}`}>
                     {client.name}

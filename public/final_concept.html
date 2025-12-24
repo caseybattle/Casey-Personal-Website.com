@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Hero Concept</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Bodoni Moda"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f1110;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        @keyframes carousel {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .animate-carousel {
+            animation: carousel 20s linear infinite;
+        }
+
+        /* Fade mask for smooth edges */
+        .mask-linear {
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-8 bg-black">
+
+    <!-- Main Container simulating the Right Column of the Hero Section -->
+    <div class="flex flex-col items-center justify-center relative w-full max-w-xl">
+
+        <!-- GLOW EFFECT -->
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[120%] bg-orange-500/20 blur-[100px] rounded-full -z-10 pointer-events-none">
+        </div>
+
+        <!-- 1. FAN STATS CARD -->
+        <div class="relative w-full h-[300px] flex items-center justify-center -mr-8 mb-4">
+
+            <!-- Back Card 2 (Rotated) -->
+            <div
+                class="absolute w-full h-full bg-white/5 border border-white/5 rounded-3xl transform rotate-6 scale-95 translate-x-4 -z-20">
+            </div>
+
+            <!-- Back Card 1 (Rotated) -->
+            <div
+                class="absolute w-full h-full bg-white/5 border border-white/5 rounded-3xl transform rotate-3 scale-95 translate-x-2 -z-10">
+            </div>
+
+            <!-- Main Top Card -->
+            <div
+                class="relative w-full bg-[#1a1a1a]/95 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl">
+                <div class="flex justify-between items-start mb-6">
+                    <div
+                        class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/10">
+                        <!-- Icon bars -->
+                        <div class="flex items-center gap-[2px]">
+                            <div class="w-1 h-2 bg-white rounded-full"></div>
+                            <div class="w-1 h-4 bg-white rounded-full"></div>
+                            <div class="w-1 h-2 bg-white rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <h3 class="text-3xl font-semibold text-white">50+</h3>
+                        <p class="text-xs text-gray-400">Successful Launches</p>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <div class="flex justify-between text-sm mb-2">
+                        <span class="text-gray-300">Priority Support</span>
+                        <span class="font-semibold text-green-400">Direct Access</span>
+                    </div>
+                    <div class="w-full h-2 bg-white/10 rounded-full overflow-hidden">
+                        <div class="w-full h-full bg-green-500 rounded-full"></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-white/5 rounded-lg">
+                        <span class="text-yellow-400">★</span>
+                    </div>
+                    <div>
+                        <p class="text-sm font-medium text-white">Hand-Coded Quality</p>
+                        <p class="text-[10px] text-gray-500">No Page Builders</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. CAROUSEL CARD (Stacked Below) -->
+        <div
+            class="relative z-20 w-[110%] self-end translate-x-8 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-xl overflow-hidden mt-2">
+            <p class="text-xs text-gray-500 uppercase tracking-wider mb-3 pl-2">Featured Clients</p>
+
+            <!-- Infinite Scroll Carousel -->
+            <div class="relative flex overflow-hidden w-full mask-linear">
+                <div class="flex items-center gap-8 animate-carousel whitespace-nowrap">
+                    <!-- Repeated list for smooth loop -->
+                    <span class="text-white/80 text-lg font-serif tracking-widest font-bold">ORBIT</span>
+                    <span class="text-white/80 text-lg font-sans font-black tracking-tighter">NEXUS</span>
+                    <span class="text-white/80 text-lg font-display italic text-2xl">Velvet</span>
+                    <span class="text-white/80 text-lg font-mono font-bold tracking-tight">VORTEX</span>
+                    <span class="text-white/80 text-lg font-sans font-semibold italic">Flux</span>
+                    <span class="text-white/80 text-lg font-serif font-medium">Sol</span>
+
+                    <span class="text-white/80 text-lg font-serif tracking-widest font-bold">ORBIT</span>
+                    <span class="text-white/80 text-lg font-sans font-black tracking-tighter">NEXUS</span>
+                    <span class="text-white/80 text-lg font-display italic text-2xl">Velvet</span>
+                    <span class="text-white/80 text-lg font-mono font-bold tracking-tight">VORTEX</span>
+                    <span class="text-white/80 text-lg font-sans font-semibold italic">Flux</span>
+                    <span class="text-white/80 text-lg font-serif font-medium">Sol</span>
+
+                    <span class="text-white/80 text-lg font-serif tracking-widest font-bold">ORBIT</span>
+                    <span class="text-white/80 text-lg font-sans font-black tracking-tighter">NEXUS</span>
+                    <span class="text-white/80 text-lg font-display italic text-2xl">Velvet</span>
+                    <span class="text-white/80 text-lg font-mono font-bold tracking-tight">VORTEX</span>
+                    <span class="text-white/80 text-lg font-sans font-semibold italic">Flux</span>
+                    <span class="text-white/80 text-lg font-serif font-medium">Sol</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
