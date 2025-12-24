@@ -35,14 +35,18 @@ const Hero: React.FC = () => {
           </div>
 
           <h1
-            className="font-medium tracking-tight leading-[1.1] mb-8 mx-auto"
+            className="font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
             style={{
               textWrap: 'balance',
               fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
             }}
           >
-            <span className="text-white">I Build High-Performance Websites That </span>
-            <span className="text-white/90"> Double Your Leads</span>
+            <span className="text-white">I Build </span>
+            <span className="text-gray-400">High-Performance</span>
+            <span className="text-white"> Websites That </span>
+            <span className="block mt-2 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+              Double Your Leads
+            </span>
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
@@ -149,8 +153,16 @@ const Hero: React.FC = () => {
           0% { transform: translateX(0); }
           100% { transform: translateX(-100%); }
         }
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
         .animate-carousel {
           animation: carousel 20s linear infinite;
+        }
+        .animate-gradient {
+          animation: gradient 4s ease infinite;
         }
         /* Fade mask for smooth edges */
         .mask-linear {
