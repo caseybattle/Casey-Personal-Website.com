@@ -27,9 +27,9 @@ const Services: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <p className="text-gray-400 mb-2 text-sm uppercase tracking-wider">Our Expertise</p>
-          <h2 className="text-4xl md:text-5xl font-medium">Services we offer</h2>
+          <h2 className="text-4xl md:text-5xl font-medium">Custom Website Services</h2>
           <p className="text-gray-400 mt-4 max-w-2xl text-lg">
-            From concept to launch, we deliver end-to-end design solutions tailored to your business goals.
+            Looking to build a website? We deliver end-to-end design and development solutions tailored to help you get more clients.
           </p>
         </div>
 
@@ -40,9 +40,9 @@ const Services: React.FC = () => {
             <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
               <Layers size={24} />
             </div>
-            <h3 className="text-2xl font-medium mb-4">UI/UX Design</h3>
+            <h3 className="text-2xl font-medium mb-4">Website Design</h3>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              User-centered design that combines aesthetics with functionality. We create intuitive interfaces that enhance user satisfaction.
+              User-centered design that converts. We create intuitive interfaces that your customers will love.
             </p>
 
             {/* Interactive Process Steps */}
@@ -76,9 +76,9 @@ const Services: React.FC = () => {
               <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
                 <Code size={24} />
               </div>
-              <h3 className="text-2xl font-medium mb-4">Development</h3>
+              <h3 className="text-2xl font-medium mb-4">Web Development</h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                Pixel-perfect implementation with clean, maintainable code using modern frameworks.
+                We build websites with pixel-perfect accuracy and clean code using modern frameworks like React & Next.js.
               </p>
 
               <div className="bg-black/50 rounded-xl p-4 font-mono text-xs text-gray-400 border border-white/5">

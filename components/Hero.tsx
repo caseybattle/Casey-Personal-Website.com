@@ -35,13 +35,13 @@ const Hero: React.FC = () => {
           </div>
 
           <h1 className="text-5xl md:text-6xl lg:text-8xl font-medium tracking-tight leading-[1.05] mb-8">
-            Crafting Digital <br />
-            <span className="text-white/90">Experiences</span> <br />
-            <span className="text-white/60">That Matter</span>
+            Expert Web Design <br />
+            <span className="text-white/90">& Development</span> <br />
+            <span className="text-white/60">For Your Business</span>
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            We design interfaces that combine beauty with functionality, creating seamless experiences that users love and businesses thrive on.
+            I build custom, high-performance websites that drive growth. Hire a professional web developer to transform your vision into a stunning digital reality.
           </p>
 
           <div className="flex flex-wrap gap-4">
