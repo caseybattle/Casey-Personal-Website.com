@@ -29,9 +29,9 @@ const Hero: React.FC = () => {
 
         {/* Left Content (Title & Text) */}
         <div className="flex flex-col justify-center animate-fade-in order-1">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/10 px-4 py-1.5 rounded-full w-fit mb-8">
-            <span className="text-[10px] font-bold tracking-widest uppercase text-gray-300">Award-Winning Design</span>
-            <Star size={12} className="text-yellow-400 fill-yellow-400" />
+          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 px-4 py-1.5 rounded-full w-fit mb-8 animate-fade-in">
+            <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></div>
+            <span className="text-[10px] font-bold tracking-widest uppercase text-red-400">Booking for Jan '26 - 2 Spots Left</span>
           </div>
 
           <h1
@@ -41,24 +41,25 @@ const Hero: React.FC = () => {
               fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
             }}
           >
-            <span className="text-white">Expert Web Design</span>
-            <span className="text-white/90"> & Development</span>
-            <span className="text-white/60 block mt-2 md:mt-0 md:inline"> For Your Business</span>
+            <span className="text-white">I Build High-Performance Websites That </span>
+            <span className="text-white/90"> Double Your Leads</span>
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            I build custom, high-performance websites that drive growth. Hire a professional web developer to transform your vision into a stunning digital reality.
+            Stop losing customers to slow, generic sites. I build custom digital experiences engineered to convert traffic into revenue.
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <button className="bg-white text-black px-8 py-3.5 rounded-full font-medium hover:bg-gray-200 transition-colors">
-              View Portfolio
-            </button>
-            <button className="flex items-center gap-3 px-8 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors group" aria-label="Watch CLX Studios Showreel">
-              <div className="w-6 h-6 rounded-full bg-white text-black flex items-center justify-center group-hover:scale-110 transition-transform">
-                <Play size={10} fill="currentColor" />
-              </div>
-              Watch Showreel
+            <a
+              href="https://forms.gle/LdCauvSVfbuyZyiB7"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#8b5cf6] text-white px-8 py-3.5 rounded-full font-medium hover:bg-[#7c3aed] transition-colors shadow-lg shadow-purple-900/20"
+            >
+              Book Strategy Call
+            </a>
+            <button className="px-8 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors">
+              View Recent Work
             </button>
           </div>
         </div>
