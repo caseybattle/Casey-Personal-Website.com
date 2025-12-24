@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Outfit', 'sans-serif'],
-        script: ['Sacramento', 'cursive'],
+        sans: ['Inter', 'sans-serif'],
+        display: ['"Bodoni Moda"', 'serif'],
       },
       colors: {
         'aura-green': '#2D4A43',

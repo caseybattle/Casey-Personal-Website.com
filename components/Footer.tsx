@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                 {/* Bottom Bar */}
                 <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-6">
                     <div className="flex items-center gap-2">
-                        <span className="font-script text-2xl text-white">CLX</span>
+                        <span className="font-display italic font-medium text-2xl text-white">CLX</span>
                         <span className="text-xs uppercase tracking-widest text-gray-500 mt-1">Studios</span>
                     </div>
 

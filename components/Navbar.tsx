@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         `}
       >
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-script text-3xl text-white">CLX</span>
+          <span className="font-display italic font-medium text-3xl text-white">CLX</span>
           <span className="text-xs uppercase tracking-widest text-gray-400 mt-2">Studios</span>
         </Link>
 

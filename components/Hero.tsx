@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const clients = [
     { name: "ORBIT", className: "font-serif tracking-widest font-bold" },
     { name: "NEXUS", className: "font-sans font-black tracking-tighter" },
-    { name: "Velvet", className: "font-script text-2xl" },
+    { name: "Velvet", className: "font-display italic text-2xl" },
     { name: "VORTEX", className: "font-mono font-bold tracking-tight" },
     { name: "Flux", className: "font-sans font-semibold italic" },
     { name: "Sol", className: "font-serif font-medium" },
@@ -35,14 +35,14 @@ const Hero: React.FC = () => {
           </div>
 
           <h1
-            className="font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
+            className="font-display font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
             style={{
               textWrap: 'balance',
               fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
             }}
           >
             <span className="text-white">I Build </span>
-            <span className="text-gray-400">High-Performance</span>
+            <span className="text-gray-400 italic">High-Performance</span>
             <span className="text-white"> Websites That </span>
             <span className="block mt-2 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
               Double Your Leads
