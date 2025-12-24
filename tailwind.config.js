@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Manrope', 'sans-serif'],
-        display: ['Syne', 'sans-serif'],
+        sans: ['Outfit', 'sans-serif'],
+        script: ['Sacramento', 'cursive'],
       },
       colors: {
         'aura-green': '#2D4A43',

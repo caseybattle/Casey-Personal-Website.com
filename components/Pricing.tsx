@@ -204,7 +204,7 @@ const Pricing: React.FC = () => {
           ))}
         </div>
 
-        <Reveal>
+        <Reveal width="100%">
           <div className="mb-12 text-center">
             <h3 className="text-2xl font-medium text-white mb-2">Feature Comparison</h3>
             <p className="text-gray-500 text-sm">Detailed breakdown of what's included.</p>

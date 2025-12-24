@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const clients = [
     { name: "ORBIT", className: "font-serif tracking-widest font-bold" },
     { name: "NEXUS", className: "font-sans font-black tracking-tighter" },
-    { name: "Velvet", className: "font-display font-light text-2xl" },
+    { name: "Velvet", className: "font-script text-2xl" },
     { name: "VORTEX", className: "font-mono font-bold tracking-tight" },
     { name: "Flux", className: "font-sans font-semibold italic" },
     { name: "Sol", className: "font-serif font-medium" },
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           </div>
 
           <h1
-            className="font-display font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
+            className="font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
             style={{
               textWrap: 'balance',
               fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
