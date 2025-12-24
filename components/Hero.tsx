@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   const clients = [
     { name: "ORBIT", className: "font-serif tracking-widest font-bold" },
     { name: "NEXUS", className: "font-sans font-black tracking-tighter" },
-    { name: "Velvet", className: "font-script text-2xl" },
+    { name: "Velvet", className: "font-display font-light text-2xl" },
     { name: "VORTEX", className: "font-mono font-bold tracking-tight" },
     { name: "Flux", className: "font-sans font-semibold italic" },
     { name: "Sol", className: "font-serif font-medium" },
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
           </div>
 
           <h1
-            className="font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
+            className="font-display font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
             style={{
               textWrap: 'balance',
               fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             <span className="text-white">I Build </span>
             <span className="text-gray-400">High-Performance</span>
             <span className="text-white"> Websites That </span>
-            <span className="block mt-2 bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+            <span className="block mt-2 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
               Double Your Leads
             </span>
           </h1>
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
               href="https://forms.gle/LdCauvSVfbuyZyiB7"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#8b5cf6] text-white px-8 py-3.5 rounded-full font-medium hover:bg-[#7c3aed] transition-colors shadow-lg shadow-purple-900/20"
+              className="bg-white text-black px-8 py-3.5 rounded-full font-medium hover:bg-gray-200 transition-colors shadow-lg shadow-white/5"
             >
               Book Strategy Call
             </a>
