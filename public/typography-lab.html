@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing 3 Distinct Styles: Bodoni (Fashion), Montserrat (Modern), Playfair (Editorial) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #050505;
+            color: white;
+            antialiased;
+        }
+
+        .font-bodoni {
+            font-family: 'Bodoni Moda', serif;
+        }
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-inter {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen py-20 px-4 md:px-0">
+    <div class="max-w-5xl mx-auto space-y-32">
+
+        <div class="text-center space-y-4">
+            <h1 class="font-mono text-xs text-gray-500 uppercase tracking-[0.5em]">Typography Selection</h1>
+            <p class="text-gray-400">Select the aesthetic that defines the brand.</p>
+        </div>
+
+        <!-- OPTION 1: HIGH FASHION / VOGUE -->
+        <div class="group relative">
+            <div class="absolute -left-12 top-0 text-xs font-mono text-gray-700 -rotate-90 origin-right translate-y-8">
+                OPTION 01</div>
+            <div class="border-l border-white/10 pl-12 py-4">
+                <p class="font-bodoni text-2xl italic text-gray-500 mb-6">Bodoni Moda (The "Vogue" Look)</p>
+                <h2 class="font-bodoni text-7xl md:text-9xl leading-[0.9] text-white mb-8">
+                    Digital<br>
+                    <span class="italic text-gray-400">Excellence</span>
+                </h2>
+                <div class="flex items-center gap-8">
+                    <p class="font-inter text-gray-400 max-w-sm leading-relaxed text-sm">
+                        Characterized by extreme contrast between thick and thin lines. This style screams high-end
+                        luxury, fashion, and premium consultancy. It is sharp, dangerous, and expensive.
+                    </p>
+                    <div class="h-1 flex-1 bg-white/10"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 2: MODERNIST / AUTHORITY -->
+        <div class="group relative">
+            <div class="absolute -left-12 top-0 text-xs font-mono text-gray-700 -rotate-90 origin-right translate-y-8">
+                OPTION 02</div>
+            <div class="border-l border-white/10 pl-12 py-4">
+                <p class="font-montserrat font-bold tracking-widest text-xs uppercase text-gray-500 mb-6">Montserrat
+                    (The "Titan" Look)</p>
+                <h2
+                    class="font-montserrat font-black text-6xl md:text-8xl text-white mb-6 tracking-tighter uppercase leading-none">
+                    Digital<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-600">Dominance</span>
+                </h2>
+                <div class="flex items-center gap-8">
+                    <p class="font-montserrat font-medium text-gray-400 max-w-sm leading-relaxed text-sm">
+                        Geometric, bold, and commanding. This style is used by tech billionaires and modern
+                        architectural firms. It conveys absolute authority, strength, and solid reliability.
+                    </p>
+                    <div class="h-1 flex-1 bg-white/10"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OPTION 3: EDITORIAL / SOPHISTICATED -->
+        <div class="group relative">
+            <div class="absolute -left-12 top-0 text-xs font-mono text-gray-700 -rotate-90 origin-right translate-y-8">
+                OPTION 03</div>
+            <div class="border-l border-white/10 pl-12 py-4">
+                <p class="font-playfair italic text-xl text-gray-500 mb-6">Playfair Display (The "Editorial" Look)</p>
+                <h2 class="font-playfair text-7xl md:text-9xl text-white mb-8 leading-[0.95]">
+                    Digital <br>
+                    <span class="italic font-light">Narratives</span>
+                </h2>
+                <div class="flex items-center gap-8">
+                    <p class="font-inter text-gray-400 max-w-sm leading-relaxed text-sm">
+                        Soft, classic, and intellectual. This style bridges the gap between traditional storytelling and
+                        modern design. It feels established, trustworthy, and artistically curated.
+                    </p>
+                    <div class="h-1 flex-1 bg-white/10"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
