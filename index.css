@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@layer utilities {
+    .font-display {
+        font-family: "Bodoni Moda", serif;
+    }
+
+    .font-sans {
+        font-family: "Inter", sans-serif;
+    }
+}
+
 /* Custom base styles can go here if needed */
 body {
     background-color: #0f1110;
