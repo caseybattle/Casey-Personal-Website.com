@@ -57,17 +57,15 @@ const Navbar: React.FC = () => {
           <NavLink href="#contact">Contact</NavLink>
         </div>
 
-        {isHome ? (
-          <a href="#contact" className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">
-            Book Now
-            <ArrowRight size={16} />
-          </a>
-        ) : (
-          <Link to="/#contact" className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">
-            Book Now
-            <ArrowRight size={16} />
-          </Link>
-        )}
+        <a
+          href="https://forms.gle/LdCauvSVfbuyZyiB7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors"
+        >
+          Book Now
+          <ArrowRight size={16} />
+        </a>
       </nav>
     </div>
   );

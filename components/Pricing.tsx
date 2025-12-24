@@ -76,16 +76,19 @@ const PricingCard: React.FC<{ plan: PlanProps }> = ({ plan }) => {
 
       <div className="mt-auto">
         <Magnetic>
-          <button
+          <a
+            href="https://forms.gle/LdCauvSVfbuyZyiB7"
+            target="_blank"
+            rel="noopener noreferrer"
             className={`
-                            w-full py-3 rounded-full font-medium transition-colors
+                            block w-full py-3 rounded-full font-medium transition-colors text-center
                             ${plan.highlight
                 ? 'bg-white text-black hover:bg-gray-200'
                 : 'bg-transparent border border-white/20 text-white hover:bg-white/10'}
                             `}
           >
             Get Started
-          </button>
+          </a>
         </Magnetic>
       </div>
     </div>

@@ -3,11 +3,11 @@ import { Play } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const videos = [
-    { id: 1, title: "Modern E-commerce", category: "Web Design", color: "bg-blue-900" },
-    { id: 2, title: "SaaS Dashboard", category: "Product", color: "bg-purple-900" },
-    { id: 3, title: "Portfolio V1", category: "Personal", color: "bg-emerald-900" },
-    { id: 4, title: "Fitness App", category: "Mobile", color: "bg-orange-900" },
-    { id: 5, title: "Finance Platform", category: "Fintech", color: "bg-indigo-900" },
+    { id: 1, title: "Modern Design System", category: "Web Design", src: "/videos/project-1.mp4" },
+    { id: 2, title: "Production Studio", category: "Brand Identity", src: "/videos/project-2.mp4" },
+    { id: 3, title: "Interactive Portfolio", category: "Development", src: "/videos/project-3.mp4" },
+    // Repeats for visual density if needed, or stick to 3
+    { id: 4, title: "E-Commerce Experience", category: "Web App", src: "/videos/project-1.mp4" },
 ];
 
 const VideoCard = ({ video }: { video: any }) => (
@@ -16,10 +16,21 @@ const VideoCard = ({ video }: { video: any }) => (
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
         className="group relative w-[400px] h-[250px] bg-[#1a1c1b] rounded-2xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 transition-colors duration-500 mx-4 flex-shrink-0 shadow-lg"
     >
-        {/* Placeholder for Video/Image */}
-        <div className={`absolute inset-0 ${video.color} opacity-20 group-hover:opacity-30 transition-opacity duration-500`}></div>
+        {/* Video Player */}
+        <div className="absolute inset-0 w-full h-full">
+            <video
+                src={video.src}
+                className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                autoPlay
+                muted
+                loop
+                playsInline
+            />
+            {/* Overlay Gradient */}
+            <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500"></div>
+        </div>
 
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
             <motion.div
                 initial={{ scale: 0.8, opacity: 0 }}
                 whileHover={{ scale: 1.1 }}
@@ -29,7 +40,7 @@ const VideoCard = ({ video }: { video: any }) => (
             </motion.div>
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
+        <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
             <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                 <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">{video.category}</span>
                 <h3 className="text-xl font-medium text-white mt-1 group-hover:text-white/90 transition-colors">{video.title}</h3>
