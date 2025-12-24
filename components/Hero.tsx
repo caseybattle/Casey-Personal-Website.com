@@ -34,10 +34,16 @@ const Hero: React.FC = () => {
             <Star size={12} className="text-yellow-400 fill-yellow-400" />
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-8xl font-medium tracking-tight leading-[1.05] mb-8">
-            Expert Web Design <br />
-            <span className="text-white/90">& Development</span> <br />
-            <span className="text-white/60">For Your Business</span>
+          <h1
+            className="font-medium tracking-tight leading-[1.1] mb-8 mx-auto"
+            style={{
+              textWrap: 'balance',
+              fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
+            }}
+          >
+            <span className="text-white">Expert Web Design</span>
+            <span className="text-white/90"> & Development</span>
+            <span className="text-white/60 block mt-2 md:mt-0 md:inline"> For Your Business</span>
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
