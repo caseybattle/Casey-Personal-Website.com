@@ -10,44 +10,52 @@ const videos = [
     { id: 4, title: "E-Commerce Experience", category: "Web App", src: "/videos/project-1.mp4" },
 ];
 
-const VideoCard = ({ video }: { video: any }) => (
-    <motion.div
-        whileHover={{ scale: 1.05, y: -5 }}
-        transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="group relative w-[400px] h-[250px] bg-[#1a1c1b] rounded-2xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 transition-colors duration-500 mx-4 flex-shrink-0 shadow-lg"
-    >
-        {/* Video Player */}
-        <div className="absolute inset-0 w-full h-full">
-            <video
-                src={video.src}
-                className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
-                autoPlay
-                muted
-                loop
-                playsInline
-            />
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500"></div>
-        </div>
+const VideoCard = ({ video }: { video: any }) => {
+    const [isLoaded, setIsLoaded] = React.useState(false);
 
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-            <motion.div
-                initial={{ scale: 0.8, opacity: 0 }}
-                whileHover={{ scale: 1.1 }}
-                className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20"
-            >
-                <Play fill="white" className="ml-1 text-white" size={24} />
-            </motion.div>
-        </div>
-
-        <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
-            <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">{video.category}</span>
-                <h3 className="text-xl font-medium text-white mt-1 group-hover:text-white/90 transition-colors">{video.title}</h3>
+    return (
+        <motion.div
+            whileHover={{ scale: 1.05, y: -5 }}
+            onViewportEnter={() => setIsLoaded(true)}
+            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            className="group relative w-[400px] h-[250px] bg-[#1a1c1b] rounded-2xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 transition-colors duration-500 mx-4 flex-shrink-0 shadow-lg"
+        >
+            {/* Video Player */}
+            <div className="absolute inset-0 w-full h-full bg-[#1a1c1b]">
+                {isLoaded && (
+                    <video
+                        src={video.src}
+                        className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        preload="none"
+                    />
+                )}
+                {/* Overlay Gradient */}
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500"></div>
             </div>
-        </div>
-    </motion.div>
-);
+
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                <motion.div
+                    initial={{ scale: 0.8, opacity: 0 }}
+                    whileHover={{ scale: 1.1 }}
+                    className="w-16 h-16 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20"
+                >
+                    <Play fill="white" className="ml-1 text-white" size={24} />
+                </motion.div>
+            </div>
+
+            <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+                <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                    <span className="text-xs font-medium text-gray-400 uppercase tracking-wider">{video.category}</span>
+                    <h3 className="text-xl font-medium text-white mt-1 group-hover:text-white/90 transition-colors">{video.title}</h3>
+                </div>
+            </div>
+        </motion.div>
+    )
+};
 
 const Showcase: React.FC = () => {
     return (
