@@ -15,13 +15,13 @@ const testimonials = [
         src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2074&auto=format&fit=crop"
     },
     {
-        quote: "A truly premium experience. They understood our brand immediately and delivered a website that exceeded our highest expectations.",
+        quote: "Casey understood our brand immediately and delivered a website that exceeded our highest expectations. A truly premium experience.",
         name: "Elena Rodriguez",
         designation: "Founder, Luxe",
         src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
     },
     {
-        quote: "Fast, efficient, and creatively brilliant. The new site has already increased our conversion rates by 40%.",
+        quote: "Working directly with the developer was a game changer. No support tickets, just results.",
         name: "David Kim",
         designation: "Marketing Director, Bolt",
         src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
@@ -68,7 +68,7 @@ const Testimonials: React.FC = () => {
                         <p className="text-gray-500 text-sm">Successful projects<br />delivered globally</p>
                     </div>
                     <div className="bg-[#111] p-6 rounded-2xl flex flex-col items-center justify-center md:items-start border border-white/5">
-                        <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">Start Project</button>
+                        <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">Secure Your Slot for January</button>
                     </div>
                 </div>
             </div>

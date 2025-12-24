@@ -26,10 +26,10 @@ const Services: React.FC = () => {
     <section id="services" className="py-24 px-4 md:px-8 bg-aura-dark border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <p className="text-gray-400 mb-2 text-sm uppercase tracking-wider">Our Expertise</p>
-          <h2 className="text-4xl md:text-5xl font-medium">Custom Website Services</h2>
+          <p className="text-gray-400 mb-2 text-sm uppercase tracking-wider">My Expertise</p>
+          <h2 className="text-4xl md:text-5xl font-medium">Specialized Development Services</h2>
           <p className="text-gray-400 mt-4 max-w-2xl text-lg">
-            Looking to build a website? We deliver end-to-end design and development solutions tailored to help you get more clients.
+            Don't just build a website—build a revenue asset. I personally architect every stage of the process to ensure enterprise-grade performance and SEO rankings.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ const Services: React.FC = () => {
             </div>
             <h3 className="text-2xl font-medium mb-4">Website Design</h3>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              User-centered design that converts. We create intuitive interfaces that your customers will love.
+              I create intuitive, conversion-focused interfaces that guide your visitors to the 'Buy' button.
             </p>
 
             {/* Interactive Process Steps */}
@@ -76,9 +76,9 @@ const Services: React.FC = () => {
               <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
                 <Code size={24} />
               </div>
-              <h3 className="text-2xl font-medium mb-4">Web Development</h3>
+              <h3 className="text-2xl font-medium mb-4">Custom React & Next.js Development</h3>
               <p className="text-gray-400 mb-8 leading-relaxed">
-                We build websites with pixel-perfect accuracy and clean code using modern frameworks like React & Next.js.
+                I don't use slow page builders. I write clean, semantic code using modern frameworks for maximum speed.
               </p>
 
               <div className="bg-black/50 rounded-xl p-4 font-mono text-xs text-gray-400 border border-white/5">
@@ -110,7 +110,7 @@ const Services: React.FC = () => {
             <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
               <Palette size={24} />
             </div>
-            <h3 className="text-2xl font-medium mb-4">Branding</h3>
+            <h3 className="text-2xl font-medium mb-4">Digital Identity & Local SEO</h3>
             <p className="text-gray-400 mb-6">
               Building strong digital identities that resonate with your audience.
             </p>
@@ -130,22 +130,22 @@ const Services: React.FC = () => {
             </div>
           </div>
 
-          {/* Service 4: Strategy */}
+          {/* Service 4: Strategy (About Section Pivot) */}
           <div className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group">
             <div className="flex items-center gap-4 mb-2">
-              <span className="text-xs font-bold uppercase tracking-widest text-gray-500">Strategy & Consulting</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-gray-500">The Solo Advantage</span>
             </div>
-            <h3 className="text-3xl font-medium mb-6 mt-2">Transform your vision into reality</h3>
+            <h3 className="text-3xl font-medium mb-6 mt-2">Direct Access. No Middlemen.</h3>
             <p className="text-gray-400 mb-8 leading-relaxed">
-              Strategic guidance from discovery to execution. We help you define goals, understand users, and create roadmaps for success.
+              Most agencies pass your project to a junior intern the moment you sign the contract. I don't. When you hire me, you get a Seasoned Developer handling your business personally. No account managers, no bloat, and no miscommunication—just a high-performance asset built to generate revenue.
             </p>
             <div className="flex items-start gap-3 p-4 rounded-xl bg-orange-500/10 border border-orange-500/20 group-hover:bg-orange-500/20 transition-colors">
               <div className="mt-1">
                 <LineChart size={20} className="text-orange-400 group-hover:scale-110 transition-transform duration-300" />
               </div>
               <div>
-                <h4 className="font-medium text-orange-100">Growth Driven</h4>
-                <p className="text-xs text-orange-200/60 mt-1">Drive measurable growth and engagement.</p>
+                <h4 className="font-medium text-orange-100">Business-First Code</h4>
+                <p className="text-xs text-orange-200/60 mt-1">I build with one goal: Converting your traffic into paying customers.</p>
               </div>
             </div>
           </div>

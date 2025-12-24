@@ -67,8 +67,9 @@ const FeatureMatrix = () => (
               ["SEO Setup", "Basic (Maps)", "Advanced On-Page", "Technical + Schema"],
               ["E-Commerce", "Payment Links", "❌", "Full Cart System"],
               ["Automation", "Email Notify", "Database", "CRM Integration"],
-              ["Turnaround", "48 Hours", "2 Weeks", "4 Weeks"],
+              ["Turnaround", "1-Week Launch", "2 Weeks", "4 Weeks"],
               ["Post-Launch", "Handover Only", "1 Week Support", "30 Days Optimization"],
+              ["Performance", "Standard", "Core Web Vitals Guarantee", "Enterprise Scale"],
             ].map(([feature, t1, t2, t3], i) => (
               <tr key={i} className="border-b border-white/5 hover:bg-white/5 transition-colors group">
                 <td className="py-5 px-6 text-gray-400 font-medium font-sans">{feature}</td>

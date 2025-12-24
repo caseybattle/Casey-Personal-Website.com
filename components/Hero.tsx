@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
             {/* Glow Effect */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[120%] bg-orange-500/20 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
 
-            {/* Main Stats Card (150+) */}
+            {/* Main Stats Card (50+) */}
             <div className="w-[85%] bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-3xl shadow-2xl animate-fade-in relative z-10 self-start -translate-x-8 hover:scale-[1.02] transition-transform duration-500">
               <div className="flex justify-between items-start mb-6">
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/10">
@@ -86,69 +86,80 @@ const Hero: React.FC = () => {
                   <div className="w-1 h-1 bg-white rounded-full mx-0.5"></div>
                 </div>
                 <div className="text-right">
-                  <h3 className="text-3xl font-semibold">150+</h3>
-                  <p className="text-xs text-gray-400">Projects Delivered</p>
+                  <h3 className="text-3xl font-semibold">50+</h3>
+                  <p className="text-xs text-gray-400">Successful Launches</p>
                 </div>
               </div>
 
               <div className="mb-6">
                 <div className="flex justify-between text-sm mb-2">
-                  <span className="text-gray-300">Client Satisfaction</span>
-                  <span className="font-semibold">98%</span>
+                  <span className="text-gray-300">Priority Support</span>
+                  <span className="font-semibold text-green-400">Direct Access</span>
                 </div>
                 <div className="w-full h-2 bg-white/10 rounded-full overflow-hidden">
-                  <div className="w-[98%] h-full bg-gradient-to-r from-gray-400 to-white rounded-full"></div>
+                  <div className="w-full h-full bg-green-500 rounded-full"></div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
-                <div>
-                  <div className="text-lg font-bold">5+</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-wider">Years</div>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-white/5 rounded-lg">
+                  <Star size={16} className="text-yellow-400 fill-yellow-400" />
                 </div>
                 <div>
-                  <div className="text-lg font-bold">24/7</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-wider">Support</div>
-                </div>
-                <div>
-                  <div className="text-lg font-bold">100%</div>
-                  <div className="text-[10px] text-gray-400 uppercase tracking-wider">Quality</div>
-                </div>
-              </div>
-
-              <div className="flex gap-2 mt-6">
-                <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-[10px] font-semibold border border-green-500/30 flex items-center gap-1">
-                  <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> ACTIVE
-                </span>
-                <span className="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-[10px] font-semibold border border-purple-500/30 flex items-center gap-1">
-                  <Star size={8} fill="currentColor" /> PREMIUM
-                </span>
-              </div>
-            </div>
-
-            {/* Featured Clients Card - Offset and overlapping ON TOP - Pro Alignment */}
-            <div className="relative z-20 -mt-6 w-[90%] self-end translate-x-16 bg-[#1a1a1a]/95 backdrop-blur-xl border border-white/10 p-6 rounded-3xl shadow-2xl animate-fade-in overflow-hidden hover:scale-[1.02] transition-transform duration-500" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xs text-gray-400 uppercase tracking-wider mb-4">Featured Clients</p>
-
-              {/* Infinite Scroll Carousel */}
-              <div className="relative flex overflow-hidden w-full mask-linear">
-                <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
-                  {/* Triple the list to ensure smooth infinite loop without gaps */}
-                  {[...clients, ...clients, ...clients].map((client, index) => (
-                    <span key={index} className={`text-white/80 text-lg ${client.className}`}>
-                      {client.name}
-                    </span>
-                  ))}
+                  <p className="text-sm font-medium">Hand-Coded Quality</p>
+                  <p className="text-[10px] text-gray-500">No Page Builders</p>
                 </div>
               </div>
             </div>
 
+            <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
+              <div>
+                <div className="text-lg font-bold">5+</div>
+                <div className="text-[10px] text-gray-400 uppercase tracking-wider">Years</div>
+              </div>
+              <div>
+                <div className="text-lg font-bold">24/7</div>
+                <div className="text-[10px] text-gray-400 uppercase tracking-wider">Support</div>
+              </div>
+              <div>
+                <div className="text-lg font-bold">100%</div>
+                <div className="text-[10px] text-gray-400 uppercase tracking-wider">Quality</div>
+              </div>
+            </div>
+
+            <div className="flex gap-2 mt-6">
+              <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-400 text-[10px] font-semibold border border-green-500/30 flex items-center gap-1">
+                <div className="w-1.5 h-1.5 rounded-full bg-green-400"></div> ACTIVE
+              </span>
+              <span className="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-[10px] font-semibold border border-purple-500/30 flex items-center gap-1">
+                <Star size={8} fill="currentColor" /> PREMIUM
+              </span>
+            </div>
           </div>
+
+          {/* Featured Clients Card - Offset and overlapping ON TOP - Pro Alignment */}
+          <div className="relative z-20 -mt-6 w-[90%] self-end translate-x-16 bg-[#1a1a1a]/95 backdrop-blur-xl border border-white/10 p-6 rounded-3xl shadow-2xl animate-fade-in overflow-hidden hover:scale-[1.02] transition-transform duration-500" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xs text-gray-400 uppercase tracking-wider mb-4">Featured Clients</p>
+
+            {/* Infinite Scroll Carousel */}
+            <div className="relative flex overflow-hidden w-full mask-linear">
+              <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
+                {/* Triple the list to ensure smooth infinite loop without gaps */}
+                {[...clients, ...clients, ...clients].map((client, index) => (
+                  <span key={index} className={`text-white/80 text-lg ${client.className}`}>
+                    {client.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
 
-      {/* Inline Styles for the Carousel Animation */}
-      <style>{`
+      {/* Inline Styles for the Carousel Animation */ }
+  <style>{`
         @keyframes carousel {
           0% { transform: translateX(0); }
           100% { transform: translateX(-100%); }
@@ -170,7 +181,7 @@ const Hero: React.FC = () => {
            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
       `}</style>
-    </section>
+    </section >
   );
 };
 
