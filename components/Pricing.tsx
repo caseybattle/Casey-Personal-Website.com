@@ -46,36 +46,47 @@ const plans: PlanProps[] = [
 ];
 
 const FeatureMatrix = () => (
-  <div className="mt-20 overflow-x-auto">
-    <table className="w-full text-left border-collapse min-w-[600px]">
-      <thead>
-        <tr className="border-b border-white/10">
-          <th className="py-4 px-4 text-gray-400 font-medium">Feature</th>
-          <th className="py-4 px-4 text-white font-medium">Launchpad ($750)</th>
-          <th className="py-4 px-4 text-white font-medium">Authority ($1,800)</th>
-          <th className="py-4 px-4 text-white font-medium">Conversion ($3,500)</th>
-        </tr>
-      </thead>
-      <tbody className="text-sm">
-        {[
-          ["Ideal For", "Personal / Local", "Growing Business", "E-com / Startups"],
-          ["Pages", "1 Page (Long Scroll)", "Up to 5 Pages", "Unlimited"],
-          ["Design Level", "High-End Template", "Brand-Aligned", "Fully Custom Identity"],
-          ["CMS (Edit)", "❌ (Static)", "✅ (Drag & Drop)", "✅ (Advanced Fields)"],
-          ["SEO Setup", "Basic (Maps)", "Advanced On-Page", "Technical + Schema"],
-          ["E-Commerce", "Payment Links", "❌", "Full Cart System"],
-          ["Automation", "Email Notify", "Database", "CRM Integration"],
-          ["Turnaround", "48 Hours", "2 Weeks", "4 Weeks"],
-        ].map(([feature, t1, t2, t3], i) => (
-          <tr key={i} className="border-b border-white/5 hover:bg-white/5 transition-colors">
-            <td className="py-4 px-4 text-gray-400 font-medium">{feature}</td>
-            <td className="py-4 px-4 text-gray-300">{t1}</td>
-            <td className="py-4 px-4 text-gray-300">{t2}</td>
-            <td className="py-4 px-4 text-white font-semibold">{t3}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+  <div className="mt-20 max-w-6xl mx-auto">
+    <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm">
+      <div className="overflow-x-auto">
+        <table className="w-full text-left border-collapse min-w-[700px]">
+          <thead>
+            <tr className="border-b border-white/10 bg-white/5">
+              <th className="py-6 px-6 text-gray-400 font-medium font-display text-sm uppercase tracking-wider w-1/4">Feature</th>
+              <th className="py-6 px-6 text-white font-bold font-display text-lg w-1/4 text-center">Launchpad <span className="block text-xs text-gray-500 font-sans font-normal mt-1">$750</span></th>
+              <th className="py-6 px-6 text-white font-bold font-display text-lg w-1/4 text-center bg-white/5">Authority <span className="block text-xs text-gray-500 font-sans font-normal mt-1">$1,800</span></th>
+              <th className="py-6 px-6 text-white font-bold font-display text-lg w-1/4 text-center">Conversion <span className="block text-xs text-gray-500 font-sans font-normal mt-1">$3,500</span></th>
+            </tr>
+          </thead>
+          <tbody className="text-sm">
+            {[
+              ["Ideal For", "Personal / Local", "Growing Business", "E-com / Startups"],
+              ["Pages", "1 Page (Long Scroll)", "Up to 5 Pages", "Unlimited"],
+              ["Design Level", "High-End Template", "Brand-Aligned", "Fully Custom Identity"],
+              ["CMS (Edit)", "❌", "✅", "✅"],
+              ["SEO Setup", "Basic (Maps)", "Advanced On-Page", "Technical + Schema"],
+              ["E-Commerce", "Payment Links", "❌", "Full Cart System"],
+              ["Automation", "Email Notify", "Database", "CRM Integration"],
+              ["Turnaround", "48 Hours", "2 Weeks", "4 Weeks"],
+              ["Post-Launch", "Handover Only", "1 Week Support", "30 Days Optimization"],
+            ].map(([feature, t1, t2, t3], i) => (
+              <tr key={i} className="border-b border-white/5 hover:bg-white/5 transition-colors group">
+                <td className="py-5 px-6 text-gray-400 font-medium font-sans">{feature}</td>
+                <td className="py-5 px-6 text-gray-300 text-center font-medium">
+                  {t1 === "❌" ? <span className="opacity-20">—</span> : t1 === "✅" ? <Check size={18} className="mx-auto text-white" /> : t1}
+                </td>
+                <td className="py-5 px-6 text-gray-300 text-center font-medium bg-white/5 group-hover:bg-white/10 transition-colors">
+                  {t2 === "❌" ? <span className="opacity-20">—</span> : t2 === "✅" ? <Check size={18} className="mx-auto text-white" /> : t2}
+                </td>
+                <td className="py-5 px-6 text-white text-center font-semibold">
+                  {t3 === "❌" ? <span className="opacity-20">—</span> : t3 === "✅" ? <Check size={18} className="mx-auto text-white" /> : t3}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 );
 
