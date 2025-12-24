@@ -41,16 +41,16 @@ const Hero: React.FC = () => {
               fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
             }}
           >
-            <span className="text-white">I Build </span>
-            <span className="text-gray-400 italic">High-Performance</span>
-            <span className="text-white"> Websites That </span>
+            <span className="text-white">High-Performance </span>
+            <span className="text-gray-400 italic">Web Design & SEO</span>
+            <span className="text-white"> by a </span>
             <span className="block mt-2 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
-              Double Your Leads
+              Seasoned Developer
             </span>
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            Stop losing customers to slow, generic sites. I build custom digital experiences engineered to convert traffic into revenue.
+            Stop paying for agency overhead. Work directly with an expert to build a lightning-fast, custom website that ranks higher on Google and turns visitors into paying clients.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
               rel="noopener noreferrer"
               className="bg-white text-black px-8 py-3.5 rounded-full font-medium hover:bg-gray-200 transition-colors shadow-lg shadow-white/5"
             >
-              Book Strategy Call
+              Book a Free Consult
             </a>
             <button className="px-8 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors">
               View Recent Work
