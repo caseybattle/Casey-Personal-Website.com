@@ -30,6 +30,33 @@ const articles = [
     date: "Nov 15, 2025",
     readTime: "4 min read",
     image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: 'atlanta-web-design-roots',
+    title: "Atlanta Roots, Global Standards: My Journey in Web Design",
+    excerpt: "Growing up in ATL and building a world-class local tech scene.",
+    category: "Personal Story",
+    date: "Dec 25, 2025",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1543322131-0979bf359f42?q=80&w=2070&auto=format&fit=crop",
+  },
+  {
+    id: 'website-builder-alpharetta',
+    title: "Website Builder vs. Web Partner: What Alpharetta Success Requires",
+    excerpt: "Why DIY builders fail the premium businesses of North Georgia.",
+    category: "Strategy",
+    date: "Dec 20, 2025",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+  },
+  {
+    id: 'georgia-tech-branding',
+    title: "The 2026 Guide to Tech Branding & Web Design in Georgia",
+    excerpt: "Scaling local brands across the Gwinnett and Sandy Springs corridors.",
+    category: "Regional Insights",
+    date: "Dec 15, 2025",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop",
   }
 ];
 

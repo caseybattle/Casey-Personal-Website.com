@@ -60,6 +60,64 @@ const blogData = {
         <p className="mb-6">If your Instagram uses one font and your website uses another, you fracture your brand voice. Digital consistency—using the same color tokens, spacing, and typographic hierarchy across all platforms—builds subconscious trust.</p>
       </>
     )
+  },
+  'atlanta-web-design-roots': {
+    title: "Atlanta Roots, Global Standards: My Journey in Web Design",
+    category: "Personal Story",
+    date: "Dec 25, 2025",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1543322131-0979bf359f42?q=80&w=2070&auto=format&fit=crop",
+    content: (
+      <>
+        <p className="mb-6">I didn't just move to Atlanta; I grew up here. My journey in web design started right after graduating from college here in Georgia, and since then, I've watched the tech landscape of our city transform into a global powerhouse.</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">From Graduation to Global Builds</h2>
+        <p className="mb-6">When I started, I realized that while many local businesses were thriving, their digital presence was stuck in the past. My goal was simple: bring world-class, premium design to the local heroes of Atlanta and the surrounding suburbs.</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Why Local Knowledge Matters</h2>
+        <p className="mb-6">Building a website in Atlanta isn't the same as building one in Silicon Valley. We have a unique business culture—diverse, fast-paced, and community-driven. My work is tailored to that spirit, ensuring your brand resonates with the people of Georgia.</p>
+
+        <blockquote className="border-l-4 border-orange-500 pl-6 italic text-gray-300 my-8">
+          "Atlanta is the silicon city of the South, and your website should reflect that energy."
+        </blockquote>
+      </>
+    )
+  },
+  'website-builder-alpharetta': {
+    title: "Website Builder vs. Professional Partner: What Alpharetta Success Requires",
+    category: "Strategy",
+    date: "Dec 20, 2025",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    content: (
+      <>
+        <p className="mb-6">For many businesses in Alpharetta and North Georgia, the temptation to use a generic "website builder" like Wix or Squarespace is strong. It's fast, it's cheap, but is it enough to win on page #1 of Google?</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">The Limitations of DIY</h2>
+        <p className="mb-6">Generic builders are built for everyone, which means they are optimized for no one. They are often bloated with unnecessary code, causing slow load times that hurt your SEO and frustrate your high-end clientele in North GA.</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">The Performance Gap</h2>
+        <p className="mb-6">Custom-coded sites (built with React and optimized manually) consistently outrank templated sites. In a competitive market like Alpharetta, a 1-second delay in page speed can mean the difference between landing a major client and losing them to a competitor.</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Investing in Growth</h2>
+        <p className="mb-6">When you hire a professional partner, you aren't just paying for a design—you're paying for a conversion strategy. We look at your local competition and build a site specifically designed to outclass them in search results.</p>
+      </>
+    )
+  },
+  'georgia-tech-branding': {
+    title: "The 2026 Guide to Tech Branding & Web Design in Georgia",
+    category: "Regional Insights",
+    date: "Dec 15, 2025",
+    readTime: "10 min read",
+    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop",
+    content: (
+      <>
+        <p className="mb-6">The "Silicon Peach" is no longer a nickname—it's a reality. From Gwinnett to Sandy Springs, the Georgia tech corridor is exploding. Here is how local brands are using premium design to scale nationally.</p>
+
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Beyond the City Limits</h2>
+        <p className="mb-6">Digital expansion doesn't stop at I-285. Brands in Marietta, Roswell, and Brookhaven are reaching national audiences by prioritizing high-performance web architecture. In 2026, your physical location is an asset, but your digital presence is your reach.</p>
+      </>
+    )
   }
 };
 
