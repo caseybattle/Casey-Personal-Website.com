@@ -13,6 +13,13 @@ const Footer: React.FC = () => {
                         <span className="font-display italic font-medium text-xl text-white">Casey Battle | Digital</span>
                     </div>
 
+                    {/* Local Links (SEO) */}
+                    <div className="flex gap-4 text-xs text-gray-600">
+                        <a href="/web-design-atlanta-ga" className="hover:text-gray-400 transition-colors">Atlanta Web Design</a>
+                        <span className="text-gray-800">•</span>
+                        <a href="/web-design-decatur-ga" className="hover:text-gray-400 transition-colors">Web Design Decatur GA</a>
+                    </div>
+
                     <div className="text-sm text-gray-500">
                         © 2025 Design Studio
                     </div>

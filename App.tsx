@@ -6,6 +6,8 @@ import Cursor from './components/Cursor';
 import Home from './pages/Home';
 import BlogPost from './pages/BlogPost';
 import BlogArchive from './pages/BlogArchive';
+import AtlantaWebDesign from './pages/AtlantaWebDesign';
+import DecaturWebDesign from './pages/DecaturWebDesign';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +20,8 @@ const App: React.FC = () => {
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<BlogArchive />} />
             <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/web-design-atlanta-ga" element={<AtlantaWebDesign />} />
+            <Route path="/web-design-decatur-ga" element={<DecaturWebDesign />} />
           </Routes>
         </main>
         <Footer />
