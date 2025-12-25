@@ -13,11 +13,19 @@ const Footer: React.FC = () => {
                         <span className="font-display italic font-medium text-xl text-white">Casey Battle | Digital</span>
                     </div>
 
-                    {/* Local Links (SEO) */}
-                    <div className="flex gap-4 text-xs text-gray-600">
-                        <a href="/web-design-atlanta-ga" className="hover:text-gray-400 transition-colors">Atlanta Web Design</a>
-                        <span className="text-gray-800">•</span>
-                        <a href="/web-design-decatur-ga" className="hover:text-gray-400 transition-colors">Web Design Decatur GA</a>
+                    {/* Regional SEO Links */}
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] text-gray-500 max-w-4xl mx-auto mb-8 border-t border-white/5 pt-8 w-full order-last md:order-none">
+                        <span className="text-gray-400 uppercase tracking-widest w-full text-center mb-2">Service Areas</span>
+                        <a href="/web-design-atlanta-ga" className="hover:text-white transition-colors">Atlanta</a>
+                        <a href="/web-design-decatur-ga" className="hover:text-white transition-colors">Decatur</a>
+                        <a href="/web-design-alpharetta-ga" className="hover:text-white transition-colors">Alpharetta</a>
+                        <a href="/web-design-marietta-ga" className="hover:text-white transition-colors">Marietta</a>
+                        <a href="/web-design-roswell-ga" className="hover:text-white transition-colors">Roswell</a>
+                        <a href="/web-design-sandy-springs-ga" className="hover:text-white transition-colors">Sandy Springs</a>
+                        <a href="/web-design-gwinnett-ga" className="hover:text-white transition-colors">Gwinnett</a>
+                        <a href="/web-design-brookhaven-ga" className="hover:text-white transition-colors">Brookhaven</a>
+                        <a href="/web-design-smyrna-ga" className="hover:text-white transition-colors">Smyrna</a>
+                        <a href="/web-design-buckhead-ga" className="hover:text-white transition-colors">Buckhead</a>
                     </div>
 
                     <div className="text-sm text-gray-500">
