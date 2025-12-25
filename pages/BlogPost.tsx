@@ -66,41 +66,38 @@ const blogData = {
     category: "Personal Story",
     date: "Dec 25, 2025",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1543322131-0979bf359f42?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">I didn't just move to Atlanta; I grew up here. My journey in web design started right after graduating from college here in Georgia, and since then, I've watched the tech landscape of our city transform into a global powerhouse.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4 mt-8">From Graduation to Global Builds</h2>
-        <p className="mb-6">When I started, I realized that while many local businesses were thriving, their digital presence was stuck in the past. My goal was simple: bring world-class, premium design to the local heroes of Atlanta and the surrounding suburbs.</p>
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Scale Locally, Reach Globally</h2>
+        <p className="mb-6">When I started, I realized that while many local businesses were thriving, their digital presence was stuck in the past. My goal was simple: bring world-class, premium design to both the local heroes of Atlanta and the businesses looking to scale their reach far beyond Georgia's borders.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Why Local Knowledge Matters</h2>
-        <p className="mb-6">Building a website in Atlanta isn't the same as building one in Silicon Valley. We have a unique business culture—diverse, fast-paced, and community-driven. My work is tailored to that spirit, ensuring your brand resonates with the people of Georgia.</p>
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Why Hybrid Knowledge Matters</h2>
+        <p className="mb-6">Building a website today requires a dual focus. You need to resonate with your local community—whether you're in Decatur, Buckhead, or Alpharetta—while having the technical performance to compete on a national stage. My work bridges that gap, ensuring your brand feels "homegrown" but looks "world-class."</p>
 
         <blockquote className="border-l-4 border-orange-500 pl-6 italic text-gray-300 my-8">
-          "Atlanta is the silicon city of the South, and your website should reflect that energy."
+          "Your physical location is your base, but your digital presence is your global footprint."
         </blockquote>
       </>
     )
   },
-  'website-builder-alpharetta': {
-    title: "Website Builder vs. Professional Partner: What Alpharetta Success Requires",
+  'premium-design-growth': {
+    title: "High-Performance Web Design: Why Quality Outperforms Generic Builders",
     category: "Strategy",
     date: "Dec 20, 2025",
     readTime: "8 min read",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
     content: (
       <>
-        <p className="mb-6">For many businesses in Alpharetta and North Georgia, the temptation to use a generic "website builder" like Wix or Squarespace is strong. It's fast, it's cheap, but is it enough to win on page #1 of Google?</p>
-
-        <h2 className="text-2xl font-bold text-white mb-4 mt-8">The Limitations of DIY</h2>
-        <p className="mb-6">Generic builders are built for everyone, which means they are optimized for no one. They are often bloated with unnecessary code, causing slow load times that hurt your SEO and frustrate your high-end clientele in North GA.</p>
+        <p className="mb-6">For high-growth businesses—from the tech hubs of North Georgia to the startup scenes across the country—the temptation to use a generic "website builder" like Wix or Squarespace is strong. It's fast, but is it enough to win on page #1 of Google?</p>
 
         <h2 className="text-2xl font-bold text-white mb-4 mt-8">The Performance Gap</h2>
-        <p className="mb-6">Custom-coded sites (built with React and optimized manually) consistently outrank templated sites. In a competitive market like Alpharetta, a 1-second delay in page speed can mean the difference between landing a major client and losing them to a competitor.</p>
+        <p className="mb-6">Generic builders are built for everyone, which means they are optimized for no one. Custom-coded sites (built with React and optimized manually) consistently outrank templated sites. Whether you're targeting clients in Roswell and Sandy Springs or reaching a nationwide audience, speed is your primary sales tool.</p>
 
-        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Investing in Growth</h2>
-        <p className="mb-6">When you hire a professional partner, you aren't just paying for a design—you're paying for a conversion strategy. We look at your local competition and build a site specifically designed to outclass them in search results.</p>
+        <h2 className="text-2xl font-bold text-white mb-4 mt-8">Strategic Conversion</h2>
+        <p className="mb-6">When you hire a professional partner, you aren't just paying for a design—you're paying for a conversion strategy. We look at your industry's national competition and build a site specifically designed to outclass them in search results, regardless of where they are located.</p>
       </>
     )
   },
