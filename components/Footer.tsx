@@ -28,6 +28,16 @@ const Footer: React.FC = () => {
                         <a href="/web-design-buckhead-ga" className="hover:text-white transition-colors">Buckhead</a>
                     </div>
 
+                    {/* National Solutions Links */}
+                    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-[10px] text-gray-500 max-w-4xl mx-auto mb-8 border-t border-white/5 pt-8 w-full order-last md:order-none">
+                        <span className="text-gray-400 uppercase tracking-widest w-full text-center mb-2">Specializations</span>
+                        <a href="/services/premium-saas-design" className="hover:text-white transition-colors">SaaS Design</a>
+                        <a href="/services/custom-react-development" className="hover:text-white transition-colors">React Development</a>
+                        <a href="/services/high-conversion-landing-pages" className="hover:text-white transition-colors">Landing Pages</a>
+                        <a href="/services/startup-mvp-builds" className="hover:text-white transition-colors">Startup MVPs</a>
+                        <a href="/services/branding-for-tech" className="hover:text-white transition-colors">Tech Branding</a>
+                    </div>
+
                     <div className="text-sm text-gray-500">
                         © 2025 Design Studio
                     </div>
