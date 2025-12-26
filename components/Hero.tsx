@@ -62,9 +62,6 @@ const Hero: React.FC = () => {
             >
               Book a Free Consult
             </a>
-            <button className="px-8 py-3.5 rounded-full border border-white/20 text-white hover:bg-white/10 transition-colors">
-              View Recent Work
-            </button>
           </div>
         </div>
 
