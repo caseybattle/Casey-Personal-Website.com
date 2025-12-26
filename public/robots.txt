@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://caseybattle.net/sitemap.xml
+Sitemap: https://battlelabs.co/sitemap.xml
