@@ -53,9 +53,10 @@ const Services: React.FC = () => {
                   key={i}
                   onClick={() => setActiveStep(i)}
                   className="flex flex-col items-center gap-3 bg-[#141414] px-1 z-10 group/step focus:outline-none"
+                  aria-label={`View step ${step}`}
                 >
-                  <div className={`w-3 h-3 rounded-full border-2 transition-all duration-300 ${i <= activeStep ? 'bg-orange-500 border-orange-500 scale-125' : 'bg-[#141414] border-gray-600 group-hover/step:border-gray-400'}`}></div>
-                  <span className={`text-[10px] font-medium hidden sm:block transition-colors ${i <= activeStep ? 'text-white' : 'text-gray-500'}`}>{step}</span>
+                  <div className={`w-3 h-3 rounded-full border-2 transition-all duration-300 ${i <= activeStep ? 'bg-orange-500 border-orange-500 scale-125' : 'bg-[#141414] border-gray-500 group-hover/step:border-gray-300'}`}></div>
+                  <span className={`text-[10px] font-medium hidden sm:block transition-colors ${i <= activeStep ? 'text-white' : 'text-gray-400'}`}>{step}</span>
                 </button>
               ))}
             </div>

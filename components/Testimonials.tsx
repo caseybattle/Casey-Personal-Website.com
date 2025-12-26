@@ -37,7 +37,7 @@ const Testimonials: React.FC = () => {
         <section className="py-24 px-4 md:px-8 bg-black border-t border-white/5 overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 <div className="text-center mb-12">
-                    <p className="text-gray-500 mb-4 text-sm uppercase tracking-wider">Testimonials</p>
+                    <p className="text-gray-400 mb-4 text-sm uppercase tracking-wider">Testimonials</p>
                     <h2 className="text-4xl md:text-5xl font-medium">WHAT CLIENTS SAY</h2>
                 </div>
 
@@ -65,11 +65,11 @@ const Testimonials: React.FC = () => {
                 <div className="w-full mt-20 pt-10 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                     <div className="bg-[#111] p-6 rounded-2xl flex flex-col md:flex-row items-center gap-4 border border-white/5">
                         <div className="text-3xl font-bold text-white">98%</div>
-                        <p className="text-gray-500 text-sm">Client satisfaction rate<br />based on feedback</p>
+                        <p className="text-gray-400 text-sm">Client satisfaction rate<br />based on feedback</p>
                     </div>
                     <div className="bg-[#111] p-6 rounded-2xl flex flex-col md:flex-row items-center gap-4 border border-white/5">
                         <div className="text-3xl font-bold text-white">150+</div>
-                        <p className="text-gray-500 text-sm">Successful projects<br />delivered globally</p>
+                        <p className="text-gray-400 text-sm">Successful projects<br />delivered globally</p>
                     </div>
                     <div className="bg-[#111] p-6 rounded-2xl flex flex-col items-center justify-center md:items-start border border-white/5">
                         <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">Secure Your Slot for January</button>

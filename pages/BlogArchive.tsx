@@ -120,7 +120,7 @@ const BlogArchive: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 text-xs text-gray-500 mb-3 font-medium">
+              <div className="flex items-center gap-4 text-xs text-gray-400 mb-3 font-medium">
                 <span className="flex items-center gap-1"><Calendar size={12} /> {article.date}</span>
                 <span className="flex items-center gap-1"><Clock size={12} /> {article.readTime}</span>
               </div>
