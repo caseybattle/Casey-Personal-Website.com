@@ -11,7 +11,7 @@ const articles = [
     category: "Design Trends",
     date: "Dec 12, 2025",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'seo-optimization-spa',
@@ -20,7 +20,7 @@ const articles = [
     category: "Development",
     date: "Nov 28, 2025",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'scaling-brand-identity',
@@ -29,7 +29,7 @@ const articles = [
     category: "Branding",
     date: "Nov 15, 2025",
     readTime: "4 min read",
-    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'atlanta-web-design-roots',
@@ -38,7 +38,7 @@ const articles = [
     category: "Personal Story",
     date: "Dec 25, 2025",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'web-design-cost-2026',
@@ -47,7 +47,7 @@ const articles = [
     category: "Business",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'salon-booking-payments',
@@ -56,7 +56,7 @@ const articles = [
     category: "Solutions",
     date: "Jan 12, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2074&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'tutor-platform-strategy',
@@ -65,7 +65,7 @@ const articles = [
     category: "Education",
     date: "Jan 15, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'premium-design-growth',
@@ -74,7 +74,7 @@ const articles = [
     category: "Strategy",
     date: "Dec 20, 2025",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
   },
   {
     id: 'georgia-tech-branding',
@@ -83,7 +83,7 @@ const articles = [
     category: "Regional Insights",
     date: "Dec 15, 2025",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop",
   }
 ];
 

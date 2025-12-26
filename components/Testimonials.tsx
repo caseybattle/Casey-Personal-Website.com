@@ -6,25 +6,25 @@ const testimonials = [
         quote: "The team transformed our digital presence completely. Professional, creative, and extremely detailed oriented.",
         name: "Sarah Chen",
         designation: "CEO, TechFlow",
-        src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2076&auto=format&fit=crop"
+        src: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop"
     },
     {
         quote: "Outstanding work from start to finish. The design perfectly captures our vision and user experience has dramatically improved.",
         name: "Michael Ross",
         designation: "CTO, DataVerse",
-        src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=2074&auto=format&fit=crop"
+        src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop"
     },
     {
         quote: "Casey understood our brand immediately and delivered a website that exceeded our highest expectations. A truly premium experience.",
         name: "Elena Rodriguez",
         designation: "Founder, Luxe",
-        src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop"
+        src: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=75&w=600&auto=format&fit=crop"
     },
     {
         quote: "Working directly with the developer was a game changer. No support tickets, just results.",
         name: "David Kim",
         designation: "Marketing Director, Bolt",
-        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2070&auto=format&fit=crop"
+        src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=75&w=600&auto=format&fit=crop"
     }
 ];
 

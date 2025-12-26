@@ -10,7 +10,7 @@ const blogData = {
     category: "Design Trends",
     date: "Dec 12, 2025",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">The web is no longer just a collection of static pages. As we look towards 2026, the boundary between digital interfaces and immersive environments is dissolving. Users demand experiences that feel alive, responsive, and deeply engaging.</p>
@@ -36,7 +36,7 @@ const blogData = {
     category: "Development",
     date: "Nov 28, 2025",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=80&w=2074&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">Single-Page Applications (SPAs) are beloved for their smooth, app-like feel. But partially rendering content with JavaScript has historically been a nightmare for SEO. Google's crawlers have gotten smarter, but you still need to help them out.</p>
@@ -55,7 +55,7 @@ const blogData = {
     category: "Business",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">One of the most common questions I get is: "Why does one website cost $500 while another costs $15,000?" In 2026, the answer lies in the technical performance and the strategy behind the design.</p>
@@ -74,7 +74,7 @@ const blogData = {
     category: "Solutions",
     date: "Jan 12, 2026",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=2074&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">For premium salons and design studios, a website is more than a brochure—it's your front desk. If you're still taking bookings via DMs or calls, you're losing revenue to friction.</p>
@@ -93,7 +93,7 @@ const blogData = {
     category: "Education",
     date: "Jan 15, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">The world of online education is saturated. To stand out as a top-tier tutor or educator, you need a digital home that is as professional as your curriculum.</p>
@@ -109,7 +109,7 @@ const blogData = {
     category: "Personal Story",
     date: "Dec 25, 2025",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">I didn't just move to Atlanta; I grew up here. My journey in web design started right after graduating from college here in Georgia, and since then, I've watched the tech landscape of our city transform into a global powerhouse.</p>
@@ -128,7 +128,7 @@ const blogData = {
     category: "Strategy",
     date: "Dec 20, 2025",
     readTime: "8 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">For high-growth businesses—from the tech hubs of North Georgia to the startup scenes across the country—the temptation to use a generic "website builder" like Wix or Squarespace is strong. It's fast, but is it enough to win on page #1 of Google?</p>
@@ -144,7 +144,7 @@ const blogData = {
     category: "Regional Insights",
     date: "Dec 15, 2025",
     readTime: "10 min read",
-    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=75&w=1200&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">The "Silicon Peach" is no longer a nickname—it's a reality. From Gwinnett to Sandy Springs, the Georgia tech corridor is exploding. Here is how local brands are using premium design to scale nationally.</p>
