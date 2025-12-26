@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
                 {/* Bottom Bar */}
                 <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-6">
                     <div className="flex items-center gap-2">
-                        <span className="font-display italic font-medium text-xl text-white">Casey Battle | Digital</span>
+                        <span className="font-display italic font-medium text-xl text-white">Battle Labs</span>
                     </div>
 
                     <div className="text-sm text-gray-500">

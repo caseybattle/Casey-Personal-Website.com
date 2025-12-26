@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 const blogData = {
   'future-of-web-design': {
     title: "The Future of Web Design: Immersive Experiences",
-    description: "Discover why 2026 is the year of micro-interactions and 3D web elements with Casey Battle.",
+    description: "Discover why 2026 is the year of micro-interactions and 3D web elements with Battle Labs.",
     category: "Design Trends",
     date: "Dec 12, 2025",
     readTime: "5 min read",
@@ -171,18 +171,19 @@ const BlogPost: React.FC = () => {
     "datePublished": article.date,
     "author": {
       "@type": "Person",
-      "name": "Casey Battle"
+      "name": "Battle Labs"
     }
   };
 
   return (
     <div className="pt-32 pb-20 px-4 md:px-8 max-w-4xl mx-auto">
       <Helmet>
-        <title>{article.title} | Casey Battle Insights</title>
+        <title>{article.title} | Battle Labs Insights</title>
         <meta name="description" content={article.description} />
         <meta property="og:title" content={article.title} />
         <meta property="og:description" content={article.description} />
         <meta property="og:image" content={article.image} />
+        <meta property="og:url" content={`https://battlelabs.co/blog/${id}`} />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>

@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
         `}
       >
         <Link to="/" className="flex items-center gap-2">
-          <span className="font-display italic font-medium text-xl md:text-2xl text-white">Casey Battle | Digital</span>
+          <span className="font-display italic font-medium text-xl text-white">Battle Labs</span>
 
         </Link>
 
