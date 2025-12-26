@@ -47,7 +47,7 @@ const articles = [
     category: "Business",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1554224155-67262308e73d?q=80&w=2011&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
   },
   {
     id: 'salon-booking-payments',

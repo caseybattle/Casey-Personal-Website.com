@@ -55,7 +55,7 @@ const blogData = {
     category: "Business",
     date: "Jan 10, 2026",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
     content: (
       <>
         <p className="mb-6">One of the most common questions I get is: "Why does one website cost $500 while another costs $15,000?" In 2026, the answer lies in the technical performance and the strategy behind the design.</p>
