@@ -22,6 +22,12 @@ const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
         requestAnimationFrame(raf);
 
+        // Force scroll to top on refresh
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
         return () => {
             lenis.destroy();
         };
