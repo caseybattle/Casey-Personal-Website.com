@@ -16,8 +16,12 @@ const Hero: React.FC = () => {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=1600&auto=format&fit=crop"
-          alt="Modern Creative Office - Web Design Agency Atlanta"
+          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=1600&auto=format&fit=crop"
+          srcSet="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=600&auto=format&fit=crop 600w, 
+                  https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=1200&auto=format&fit=crop 1200w, 
+                  https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=1600&auto=format&fit=crop 1600w"
+          sizes="(max-width: 768px) 100vw, 100vw"
+          alt="Modern Creative Office - Web Design Agency Battle Labs"
           className="w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#182e28] via-[#1a1a1a]/80 to-[#c26d2b]/30 mix-blend-multiply"></div>

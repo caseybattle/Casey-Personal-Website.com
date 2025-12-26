@@ -32,7 +32,7 @@ const ServicePage: React.FC = () => {
     };
 
     useEffect(() => {
-        document.title = `${formattedService} | Premium Web Design & Development | Casey Battle`;
+        document.title = `${formattedService} | Premium Web Design & Development | Battle Labs`;
         window.scrollTo(0, 0);
     }, [formattedService]);
 

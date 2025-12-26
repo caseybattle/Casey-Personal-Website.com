@@ -26,7 +26,7 @@ const LocationPage: React.FC = () => {
     };
 
     useEffect(() => {
-        document.title = `${formattedCity} Web Design | Premium Development | Casey Battle`;
+        document.title = `${formattedCity} Web Design | Premium Development | Battle Labs`;
 
         // Scroll to top when city changes
         window.scrollTo(0, 0);
