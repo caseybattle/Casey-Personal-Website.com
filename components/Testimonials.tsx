@@ -32,8 +32,8 @@ const testimonials = [
     },
     {
         quote: "The strategic insight into our local market was invaluable. More than just a website, it's a growth engine.",
-        name: "New Client",
-        designation: "Director, Forward Co",
+        name: "Jameson Clarke",
+        designation: "Founder, Urban & Co.",
         src: "/images/testimonial-5.png",
         srcSet: "/images/testimonial-5.png 300w, /images/testimonial-5.png 600w"
     }
