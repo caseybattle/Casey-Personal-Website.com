@@ -29,6 +29,13 @@ const testimonials = [
         designation: "Marketing Director, Bolt",
         src: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=75&w=600&auto=format&fit=crop",
         srcSet: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=70&w=300&auto=format&fit=crop 300w, https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=75&w=600&auto=format&fit=crop 600w"
+    },
+    {
+        quote: "The strategic insight into our local market was invaluable. More than just a website, it's a growth engine.",
+        name: "New Client",
+        designation: "Director, Forward Co",
+        src: "/images/testimonial-5.png",
+        srcSet: "/images/testimonial-5.png 300w, /images/testimonial-5.png 600w"
     }
 ];
 
