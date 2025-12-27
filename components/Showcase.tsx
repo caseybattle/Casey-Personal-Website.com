@@ -15,17 +15,16 @@ const VideoCard = ({ video }: { video: any }) => {
 
     return (
         <motion.div
-            whileHover={{ scale: 1.05, y: -5 }}
+            whileHover={{ scale: 1.4, zIndex: 50, transition: { duration: 0.3, ease: "easeOut" } }}
             onViewportEnter={() => setIsLoaded(true)}
-            transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="group relative w-[400px] h-[250px] bg-[#1a1c1b] rounded-2xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 transition-colors duration-500 mx-4 flex-shrink-0 shadow-lg"
+            className="group relative w-[400px] h-[250px] bg-[#1a1c1b] rounded-2xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 shadow-lg mx-4 flex-shrink-0"
         >
             {/* Video Player */}
             <div className="absolute inset-0 w-full h-full bg-[#1a1c1b]">
                 {isLoaded && (
                     <video
                         src={video.src}
-                        className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-500"
+                        className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
                         autoPlay
                         muted
                         loop
@@ -34,7 +33,7 @@ const VideoCard = ({ video }: { video: any }) => {
                     />
                 )}
                 {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500"></div>
+                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-300"></div>
             </div>
 
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -73,8 +72,8 @@ const Showcase: React.FC = () => {
             </div>
 
             {/* Marquee Container */}
-            <div className="relative w-full flex overflow-x-hidden">
-                <div className="flex animate-marquee hover:pause">
+            <div className="relative w-full flex overflow-x-hidden py-10 md:py-16">
+                <div className="flex animate-marquee hover:pause items-center">
                     {/* Double the list for infinite loop effect */}
                     {[...videos, ...videos, ...videos].map((video, idx) => (
                         <VideoCard key={`${video.id}-${idx}`} video={video} />
