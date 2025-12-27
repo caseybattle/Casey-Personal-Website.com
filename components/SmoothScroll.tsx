@@ -35,8 +35,15 @@ const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({ children }) => 
 
     // Handle Hash Links on Route Change
     const { hash } = useLocation();
+    const isFirstRender = React.useRef(true);
 
     useEffect(() => {
+        // Skip the scroll on initial load (refresh) to force top-of-page
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+
         if (hash) {
             const id = hash.replace('#', '');
             const element = document.getElementById(id);
