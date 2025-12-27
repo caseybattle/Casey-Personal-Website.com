@@ -15,9 +15,9 @@ const VideoCard = ({ video }: { video: any }) => {
 
     return (
         <motion.div
-            whileHover={{ scale: 1.5, zIndex: 50, transition: { duration: 0.3, ease: "easeOut" } }}
+            whileHover={{ scale: 1.15, zIndex: 50, transition: { duration: 0.3, ease: "easeOut" } }}
             onViewportEnter={() => setIsLoaded(true)}
-            className="group relative w-[500px] h-[280px] bg-[#1a1c1b] rounded-2xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 shadow-lg mx-6 flex-shrink-0"
+            className="group relative w-[800px] h-[450px] bg-[#1a1c1b] rounded-3xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 shadow-2xl mx-8 flex-shrink-0"
         >
             {/* Video Player */}
             <div className="absolute inset-0 w-full h-full bg-[#1a1c1b]">
@@ -40,16 +40,16 @@ const VideoCard = ({ video }: { video: any }) => {
                 <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
                     whileHover={{ scale: 1.1 }}
-                    className="w-20 h-20 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20"
+                    className="w-24 h-24 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20"
                 >
-                    <Play fill="white" className="ml-1 text-white" size={32} />
+                    <Play fill="white" className="ml-1 text-white" size={40} />
                 </motion.div>
             </div>
 
-            <div className="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
+            <div className="absolute bottom-0 left-0 w-full p-10 bg-gradient-to-t from-black/90 to-transparent pointer-events-none">
                 <div className="transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                    <span className="text-sm font-medium text-gray-400 uppercase tracking-wider">{video.category}</span>
-                    <h3 className="text-2xl font-medium text-white mt-1 group-hover:text-white/90 transition-colors">{video.title}</h3>
+                    <span className="text-lg font-medium text-gray-400 uppercase tracking-wider">{video.category}</span>
+                    <h3 className="text-4xl font-medium text-white mt-2 group-hover:text-white/90 transition-colors">{video.title}</h3>
                 </div>
             </div>
         </motion.div>
@@ -72,7 +72,7 @@ const Showcase: React.FC = () => {
             </div>
 
             {/* Marquee Container */}
-            <div className="relative w-full flex overflow-x-hidden py-16 md:py-24">
+            <div className="relative w-full flex overflow-x-hidden py-20 md:py-32">
                 <div className="flex animate-marquee hover:pause items-center">
                     {/* Double the list for infinite loop effect */}
                     {[...videos, ...videos, ...videos].map((video, idx) => (
