@@ -6,8 +6,8 @@ const videos = [
     { id: 1, title: "Modern Design System", category: "Web Design", src: "/videos/project-1.mp4" },
     { id: 2, title: "Production Studio", category: "Brand Identity", src: "/videos/project-2.mp4" },
     { id: 3, title: "Interactive Portfolio", category: "Development", src: "/videos/project-3.mp4" },
-    // Repeats for visual density if needed, or stick to 3
-    { id: 4, title: "E-Commerce Experience", category: "Web App", src: "/videos/project-1.mp4" },
+    { id: 4, title: "E-Commerce Experience", category: "Web App", src: "/videos/project-4.mp4" },
+    { id: 5, title: "SaaS Dashboard", category: "Product Design", src: "/videos/project-5.mp4" },
 ];
 
 const VideoCard = ({ video }: { video: any }) => {
