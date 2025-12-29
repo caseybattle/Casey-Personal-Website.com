@@ -37,10 +37,10 @@ const Services: React.FC = () => {
 
           {/* Service 1: UI/UX Design - Interactive Steps */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.5 }}
             className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group"
           >
             <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
