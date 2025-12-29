@@ -36,7 +36,13 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
           {/* Service 1: UI/UX Design - Interactive Steps */}
-          <div className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group"
+          >
             <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
               <Layers size={24} />
             </div>
@@ -69,10 +75,16 @@ const Services: React.FC = () => {
                 {activeStep === 4 && "Deployment & handover"}
               </span>
             </div>
-          </div>
+          </motion.div>
 
           {/* Service 2: Development - Interactive Tabs */}
-          <div className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden"
+          >
             <div className="relative z-10">
               <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
                 <Code size={24} />
@@ -104,10 +116,16 @@ const Services: React.FC = () => {
               </div>
             </div>
             <div className="absolute top-0 right-0 w-64 h-64 bg-green-900/10 blur-[80px] rounded-full pointer-events-none"></div>
-          </div>
+          </motion.div>
 
           {/* Service 3: Branding - Interactive Toggles */}
-          <div className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors"
+          >
             <div className="w-12 h-12 rounded-xl bg-gray-800 flex items-center justify-center mb-6 text-white">
               <Palette size={24} />
             </div>
@@ -129,10 +147,16 @@ const Services: React.FC = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Service 4: Strategy (About Section Pivot) */}
-          <div className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group">
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group"
+          >
             <div className="flex items-center gap-4 mb-2">
               <span className="text-xs font-bold uppercase tracking-widest text-gray-500">The Solo Advantage</span>
             </div>
@@ -149,7 +173,7 @@ const Services: React.FC = () => {
                 <p className="text-xs text-orange-200/60 mt-1">I build with one goal: Converting your traffic into paying customers.</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
