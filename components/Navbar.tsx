@@ -52,8 +52,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
           <NavLink href="#work">Portfolio</NavLink>
           <NavLink href="#services">Services</NavLink>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#blog">Insights</NavLink>
+          <NavLink href="#blog">Blog</NavLink>
           <NavLink href="#contact">Contact</NavLink>
         </div>
 
