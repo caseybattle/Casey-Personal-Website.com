@@ -39,7 +39,7 @@ const Services: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors group"
           >
@@ -81,7 +81,7 @@ const Services: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors relative overflow-hidden"
           >
@@ -122,7 +122,7 @@ const Services: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, amount: 0.3 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="bg-[#141414] rounded-3xl p-8 md:p-12 border border-white/10 hover:border-white/20 transition-colors"
           >
