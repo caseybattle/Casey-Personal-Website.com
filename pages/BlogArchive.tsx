@@ -5,6 +5,15 @@ import { motion } from 'framer-motion';
 
 const articles = [
   {
+    id: 'atlanta-web-design-strategies',
+    title: "The 2-Track Web Strategy: Why Atlanta Service Pros & Creators Need Different Sites in 2025",
+    excerpt: "Looking for 'Web Design Atlanta'? Stop. Discover the specific 'Booked Solid' vs 'Authority Builder' frameworks that are winning local search in 2025.",
+    category: "Strategy",
+    date: "Dec 29, 2025",
+    readTime: "8 min read",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop",
+  },
+  {
     id: 'future-of-web-design',
     title: "The Future of Web Design: Immersive Experiences",
     excerpt: "Why 2026 is the year of micro-interactions and 3D web elements.",
