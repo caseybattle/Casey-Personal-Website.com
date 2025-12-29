@@ -17,14 +17,14 @@ const VideoCard = ({ video }: { video: any }) => {
         <motion.div
             whileHover={{ scale: 1.15, zIndex: 50, transition: { duration: 0.3, ease: "easeOut" } }}
             onViewportEnter={() => setIsLoaded(true)}
-            className="group relative w-[800px] h-[450px] bg-[#1a1c1b] rounded-3xl overflow-hidden border border-white/5 cursor-pointer hover:border-white/40 shadow-2xl mx-8 flex-shrink-0"
+            className="group relative w-[800px] h-[450px] bg-[#1a1c1b] rounded-3xl overflow-hidden border border-white/20 cursor-pointer hover:border-white/40 shadow-2xl mx-8 flex-shrink-0"
         >
             {/* Video Player */}
             <div className="absolute inset-0 w-full h-full bg-[#1a1c1b]">
                 {isLoaded && (
                     <video
                         src={video.src}
-                        className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+                        className="w-full h-full object-cover opacity-75 group-hover:opacity-100 transition-opacity duration-300"
                         autoPlay
                         muted
                         loop
@@ -71,8 +71,11 @@ const Showcase: React.FC = () => {
                 </div>
             </div>
 
+            {/* Ambient Stage Light */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[600px] bg-indigo-500/10 blur-[120px] rounded-full pointer-events-none z-0"></div>
+
             {/* Marquee Container */}
-            <div className="relative w-full flex overflow-x-hidden py-20 md:py-32">
+            <div className="relative w-full flex overflow-x-hidden py-20 md:py-32 z-10">
                 <div className="flex animate-marquee hover:pause items-center">
                     {/* Double the list for infinite loop effect */}
                     {[...videos, ...videos, ...videos].map((video, idx) => (
