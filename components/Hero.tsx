@@ -137,25 +137,27 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Featured Clients Carousel - Positioned Below */}
-            <div className="relative z-20 w-[110%] self-end translate-x-8 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-xl animate-fade-in overflow-hidden hover:border-white/20 transition-colors mt-2" style={{ animationDelay: '0.4s' }}>
-              <p className="text-xs text-gray-500 uppercase tracking-wider mb-3 pl-2">Featured Clients</p>
-              <div className="relative flex overflow-hidden w-full mask-linear">
-                <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
-                  {[...clients, ...clients, ...clients].map((client, index) => (
-                    <span key={index} className={`text-white/80 text-lg ${client.className}`}>
-                      {client.name}
-                    </span>
-                  ))}
-                </div>
+          </div>
+
+          {/* Featured Clients Carousel - Positioned Below */}
+          <div className="relative z-20 w-[110%] self-end translate-x-8 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-xl animate-fade-in overflow-hidden hover:border-white/20 transition-colors mt-2" style={{ animationDelay: '0.4s' }}>
+            <p className="text-xs text-gray-500 uppercase tracking-wider mb-3 pl-2">Featured Clients</p>
+            <div className="relative flex overflow-hidden w-full mask-linear">
+              <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
+                {[...clients, ...clients, ...clients].map((client, index) => (
+                  <span key={index} className={`text-white/80 text-lg ${client.className}`}>
+                    {client.name}
+                  </span>
+                ))}
               </div>
             </div>
-
           </div>
-        </div>
 
-        {/* Inline Styles for the Carousel Animation */}
-        <style>{`
+        </div>
+      </div>
+
+      {/* Inline Styles for the Carousel Animation */}
+      <style>{`
         @keyframes carousel {
           0% { transform: translateX(0); }
           100% { transform: translateX(-100%); }
