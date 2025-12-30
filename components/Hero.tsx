@@ -150,8 +150,8 @@ const Hero: React.FC = () => {
 
           </div>
 
-          {/* Featured Clients Carousel - Positioned Below */}
-          <div className="relative z-20 w-[110%] self-end translate-x-8 bg-[#1a1a1a]/80 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-xl animate-fade-in overflow-hidden hover:border-white/20 transition-colors mt-2" style={{ animationDelay: '0.4s' }}>
+          {/* Featured Clients Carousel - Positioned Below (Aligned) */}
+          <div className="relative z-0 w-[85%] self-start -translate-x-8 bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-3xl border border-white/[0.1] p-6 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-fade-in overflow-hidden mt-6 group/carousel" style={{ animationDelay: '0.4s' }}>
             <p className="text-xs text-gray-500 uppercase tracking-wider mb-3 pl-2">Featured Clients</p>
             <div className="relative flex overflow-hidden w-full mask-linear">
               <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
