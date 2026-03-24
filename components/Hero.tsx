@@ -24,9 +24,9 @@ const Hero: React.FC = () => {
         >
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
-        {/* Left-heavy gradient — keeps text readable, lets video breathe on the right */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f1110]/95 via-[#182e28]/50 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110] via-transparent to-transparent"></div>
+        {/* Lightened overlay — video breathes through */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f1110]/75 via-[#182e28]/30 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110]/80 via-transparent to-transparent"></div>
       </div>
 
       {/* Main Content — centered, full width */}
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
           <span className="text-white">High-Performance </span>
           <span className="text-gray-300 italic">Web Design</span>
           <span className="text-white"> & </span>
-          <span className="block mt-2 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+          <span className="block mt-2 bg-gradient-to-r from-white via-amber-200 to-orange-300 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient" style={{ filter: 'drop-shadow(0 0 24px rgba(251,191,36,0.5))' }}>
             SEO that Converts
           </span>
         </h1>
