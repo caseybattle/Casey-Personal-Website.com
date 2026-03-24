@@ -13,17 +13,17 @@ const Hero: React.FC = () => {
 
   return (
     <section id="about" className="relative w-full min-h-screen pt-32 pb-20 px-4 md:px-8 flex flex-col justify-center overflow-hidden">
-      {/* Background Image & Overlay */}
+      {/* Background Video & Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=1600&auto=format&fit=crop"
-          srcSet="https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=600&auto=format&fit=crop 600w, 
-                  https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=1200&auto=format&fit=crop 1200w, 
-                  https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=60&w=1600&auto=format&fit=crop 1600w"
-          sizes="(max-width: 768px) 100vw, 100vw"
-          alt="Modern Creative Office - Web Design Agency Battle Labs"
-          className="w-full h-full object-cover opacity-60"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-70"
+        >
+          <source src="/hero-bg.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-[#182e28] via-[#1a1a1a]/80 to-[#c26d2b]/30 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110] via-transparent to-transparent"></div>
       </div>
