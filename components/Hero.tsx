@@ -20,11 +20,12 @@ const Hero: React.FC = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-90"
         >
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#182e28] via-[#1a1a1a]/80 to-[#c26d2b]/30 mix-blend-multiply"></div>
+        {/* Left-heavy gradient — keeps text readable, lets video breathe on the right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f1110]/95 via-[#182e28]/50 to-transparent"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110] via-transparent to-transparent"></div>
       </div>
 
@@ -42,7 +43,8 @@ const Hero: React.FC = () => {
             className="font-display font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
             style={{
               textWrap: 'balance',
-              fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)'
+              fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)',
+              textShadow: '0 2px 20px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9)'
             }}
           >
             <span className="text-white">High-Performance </span>
@@ -79,7 +81,7 @@ const Hero: React.FC = () => {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[120%] bg-orange-500/20 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
 
             {/* Main Stats Card (50+) - V2 NEON GLASS */}
-            <div className="w-[85%] bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-3xl border border-white/[0.1] p-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-fade-in relative z-10 self-start -translate-x-8 hover:scale-[1.02] transition-transform duration-500 group/card">
+            <div className="w-[85%] bg-gradient-to-br from-white/[0.05] to-black/[0.15] backdrop-blur-xl border border-white/[0.08] p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] animate-fade-in relative z-10 self-start -translate-x-8 hover:scale-[1.02] transition-transform duration-500 group/card">
 
               {/* Internal Glass Reflection/Sheen */}
               <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-transparent rounded-3xl pointer-events-none"></div>
