@@ -20,13 +20,13 @@ const Hero: React.FC = () => {
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-full object-cover opacity-100"
         >
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>
         {/* Lightened overlay — video breathes through */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0f1110]/75 via-[#182e28]/30 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110]/80 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0f1110]/50 via-[#182e28]/15 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110]/50 via-transparent to-transparent"></div>
       </div>
 
       {/* Main Content — centered, full width */}
