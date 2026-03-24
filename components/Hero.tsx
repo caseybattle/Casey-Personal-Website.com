@@ -29,144 +29,75 @@ const Hero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0f1110] via-transparent to-transparent"></div>
       </div>
 
-      {/* Main Layout Container - Grid for strict side-by-side on Tablet+ */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 lg:gap-20 items-center">
+      {/* Main Content — centered, full width */}
+      <div className="relative z-10 w-full max-w-4xl mx-auto flex flex-col items-center text-center px-4">
 
-        {/* Left Content (Title & Text) */}
-        <div className="flex flex-col justify-center animate-fade-in order-1">
-          <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 px-4 py-1.5 rounded-full w-fit mb-8 animate-fade-in">
-            <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></div>
-            <span className="text-[10px] font-bold tracking-widest uppercase text-red-400">Now Accepting New Clients</span>
+        {/* Status badge */}
+        <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 px-4 py-1.5 rounded-full mb-10 animate-fade-in">
+          <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></div>
+          <span className="text-[10px] font-bold tracking-widest uppercase text-red-400">Now Accepting New Clients</span>
+        </div>
+
+        {/* Headline */}
+        <h1
+          className="font-display font-medium tracking-tight leading-[1.05] mb-8"
+          style={{
+            textWrap: 'balance',
+            fontSize: 'clamp(3rem, 6vw + 1rem, 7rem)',
+            textShadow: '0 2px 30px rgba(0,0,0,0.9), 0 1px 6px rgba(0,0,0,1)'
+          }}
+        >
+          <span className="text-white">High-Performance </span>
+          <span className="text-gray-300 italic">Web Design</span>
+          <span className="text-white"> & </span>
+          <span className="block mt-2 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
+            SEO that Converts
+          </span>
+        </h1>
+
+        {/* Subheading */}
+        <p className="text-lg text-gray-400 max-w-2xl mb-10 leading-relaxed" style={{ textShadow: '0 1px 8px rgba(0,0,0,0.9)' }}>
+          Stop paying for agency overhead. Work directly with an expert to build a lightning-fast, custom website that ranks higher on Google and turns visitors into paying clients.
+        </p>
+
+        {/* CTA */}
+        <a
+          href="https://forms.gle/LdCauvSVfbuyZyiB7"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-black px-10 py-4 rounded-full font-medium text-base hover:bg-gray-200 transition-colors shadow-[0_0_40px_rgba(255,255,255,0.15)] mb-14"
+        >
+          Book a Free Consult
+        </a>
+
+        {/* Slim stat pills */}
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+            <div className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse shadow-[0_0_6px_#4ade80]"></div>
+            <span className="text-xs text-gray-300 tracking-wide">Accepting Clients</span>
           </div>
-
-          <h1
-            className="font-display font-medium tracking-tight leading-[1.05] mb-10 mx-auto"
-            style={{
-              textWrap: 'balance',
-              fontSize: 'clamp(2.5rem, 5vw + 1rem, 5.5rem)',
-              textShadow: '0 2px 20px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9)'
-            }}
-          >
-            <span className="text-white">High-Performance </span>
-            <span className="text-gray-400 italic">Web Design & SEO</span>
-            <span className="text-white"> by a </span>
-            <span className="block mt-2 bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
-              Seasoned Developer
-            </span>
-          </h1>
-
-          <p className="text-lg text-gray-400 max-w-xl mb-10 leading-relaxed">
-            Stop paying for agency overhead. Work directly with an expert to build a lightning-fast, custom website that ranks higher on Google and turns visitors into paying clients.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a
-              href="https://forms.gle/LdCauvSVfbuyZyiB7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-black px-8 py-3.5 rounded-full font-medium hover:bg-gray-200 transition-colors shadow-lg shadow-white/5"
-            >
-              Book a Free Consult
-            </a>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+            <span className="text-xs text-gray-300 tracking-wide">5+ Years Experience</span>
+          </div>
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+            <span className="text-xs text-gray-300 tracking-wide">100% Quality Guarantee</span>
           </div>
         </div>
 
-        {/* Right Content (Stacked Cards) - Strictly to the right */}
-        <div className="flex flex-col items-center md:items-end justify-center relative order-2">
-
-          {/* Card Wrapper - ensuring consistent width */}
-          <div className="relative w-full max-w-xl flex flex-col">
-
-            {/* Glow Effect */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[120%] bg-orange-500/20 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
-
-            {/* Main Stats Card (50+) - V2 NEON GLASS */}
-            <div className="w-[85%] bg-gradient-to-br from-white/[0.05] to-black/[0.15] backdrop-blur-xl border border-white/[0.08] p-8 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] animate-fade-in relative z-10 self-start -translate-x-8 hover:scale-[1.02] transition-transform duration-500 group/card">
-
-              {/* Internal Glass Reflection/Sheen */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/[0.05] via-transparent to-transparent rounded-3xl pointer-events-none"></div>
-
-              <div className="flex justify-between items-start mb-8 relative">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-white/[0.1] to-white/[0.02] flex items-center justify-center border border-white/[0.15] shadow-inner">
-                  <div className="flex gap-1 items-end h-5">
-                    <div className="w-1.5 h-3 bg-white/40 rounded-full"></div>
-                    <div className="w-1.5 h-6 bg-white/90 rounded-full shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
-                    <div className="w-1.5 h-4 bg-white/60 rounded-full"></div>
-                  </div>
-                </div>
-                <div className="text-right">
-                  <h3 className="text-5xl font-medium tracking-tighter text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">5+</h3>
-                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mt-1">Client Projects</p>
-                </div>
-              </div>
-
-              <div className="mb-8 relative">
-                <div className="flex justify-between text-xs mb-3">
-                  <span className="text-gray-400 font-medium tracking-wide">Availability</span>
-                  <span className="font-bold text-green-400 shadow-green-500/50 drop-shadow-[0_0_5px_rgba(74,222,128,0.8)]">HIGH DEMAND</span>
-                </div>
-                <div className="w-full h-2 bg-black/40 rounded-full overflow-hidden border border-white/5 shadow-inner">
-                  <div className="w-full h-full bg-gradient-to-r from-green-500 to-green-300 rounded-full shadow-[0_0_15px_rgba(74,222,128,0.6)]"></div>
-                </div>
-              </div>
-
-              {/* Refined Grid */}
-              <div className="grid grid-cols-3 gap-6 border-t border-white/[0.08] pt-6 mb-8">
-                <div className="text-left">
-                  <div className="text-2xl font-medium tracking-tight text-white mb-1">5+</div>
-                  <div className="text-[9px] text-gray-500 font-bold uppercase tracking-[0.15em]">Years</div>
-                </div>
-                <div className="text-left">
-                  <div className="text-2xl font-medium tracking-tight text-white mb-1">24/7</div>
-                  <div className="text-[9px] text-gray-500 font-bold uppercase tracking-[0.15em]">Support</div>
-                </div>
-                <div className="text-left">
-                  <div className="text-2xl font-medium tracking-tight text-white mb-1">100%</div>
-                  <div className="text-[9px] text-gray-500 font-bold uppercase tracking-[0.15em]">Quality</div>
-                </div>
-              </div>
-
-              {/* Neon Glass Badges - V2 (3D Buttons) */}
-              <div className="flex flex-wrap gap-4">
-                {/* Active Button */}
-                <div className="relative group/btn cursor-default">
-                  <div className="absolute inset-0 bg-green-500/30 blur-md rounded-full opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative px-4 py-2 rounded-full bg-gradient-to-b from-green-900/40 to-green-950/40 border border-green-500/30 flex items-center gap-3 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                    <div className="relative flex items-center justify-center">
-                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse shadow-[0_0_10px_#4ade80]"></div>
-                    </div>
-                    <span className="text-[10px] font-bold text-green-200 tracking-wider uppercase drop-shadow">Accepting Clients</span>
-                  </div>
-                </div>
-
-                {/* Premium Button */}
-                <div className="relative group/btn cursor-default">
-                  <div className="absolute inset-0 bg-purple-500/30 blur-md rounded-full opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative px-4 py-2 rounded-full bg-gradient-to-b from-purple-900/40 to-purple-950/40 border border-purple-500/30 flex items-center gap-3 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)]">
-                    <Star size={10} className="text-purple-300 fill-purple-300 shadow-[0_0_10px_#d8b4fe]" />
-                    <span className="text-[10px] font-bold text-purple-200 tracking-wider uppercase drop-shadow">Premium Only</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Featured Clients Carousel - Positioned Below (Aligned) */}
-          <div className="relative z-0 w-[85%] self-start -translate-x-8 bg-gradient-to-br from-white/[0.08] to-white/[0.02] backdrop-blur-3xl border border-white/[0.1] p-8 rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] animate-fade-in overflow-hidden mt-6 group/carousel" style={{ animationDelay: '0.4s' }}>
-            <p className="text-xs text-gray-500 uppercase tracking-wider mb-3 pl-2">Featured Clients</p>
-            <div className="relative flex overflow-hidden w-full mask-linear">
-              <div className="flex items-center gap-8 animate-carousel whitespace-nowrap">
-                {[...clients, ...clients, ...clients].map((client, index) => (
-                  <span key={index} className={`text-white/80 text-lg ${client.className}`}>
-                    {client.name}
-                  </span>
-                ))}
-              </div>
+        {/* Full-width client ticker */}
+        <div className="w-screen relative left-1/2 -translate-x-1/2 border-t border-white/5 pt-6">
+          <p className="text-[10px] text-gray-600 uppercase tracking-widest mb-4">Featured Clients</p>
+          <div className="relative flex overflow-hidden w-full mask-linear">
+            <div className="flex items-center gap-10 animate-carousel whitespace-nowrap">
+              {[...clients, ...clients, ...clients].map((client, index) => (
+                <span key={index} className={`text-white/50 text-base ${client.className}`}>
+                  {client.name}
+                </span>
+              ))}
             </div>
           </div>
-
         </div>
+
       </div>
 
       {/* Inline Styles for the Carousel Animation */}
