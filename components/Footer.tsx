@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
                     </div>
 
                     <div className="text-sm text-gray-400">
-                        © 2025 Design Studio
+                        © {new Date().getFullYear()} Battle Labs
                     </div>
 
                     <div className="flex items-center gap-6">

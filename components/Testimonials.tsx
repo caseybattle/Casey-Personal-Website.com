@@ -68,19 +68,10 @@ const Testimonials: React.FC = () => {
                     />
                 </div>
 
-                {/* Footer Stats Strip */}
-                <div className="w-full mt-20 pt-10 border-t border-white/10 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-                    <div className="bg-[#111] p-6 rounded-2xl flex flex-col md:flex-row items-center gap-4 border border-white/5">
-                        <div className="text-3xl font-bold text-white">98%</div>
-                        <p className="text-gray-400 text-sm">Client satisfaction rate<br />based on feedback</p>
-                    </div>
-                    <div className="bg-[#111] p-6 rounded-2xl flex flex-col md:flex-row items-center gap-4 border border-white/5">
-                        <div className="text-3xl font-bold text-white">150+</div>
-                        <p className="text-gray-400 text-sm">Successful projects<br />delivered globally</p>
-                    </div>
-                    <div className="bg-[#111] p-6 rounded-2xl flex flex-col items-center justify-center md:items-start border border-white/5">
-                        <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">Secure Your Slot for January</button>
-                    </div>
+                {/* CTA Strip */}
+                <div className="w-full mt-20 pt-10 border-t border-white/10 flex flex-col items-center justify-center gap-6">
+                    <p className="text-gray-400 text-sm uppercase tracking-widest">Ready to build something great?</p>
+                    <a href="https://forms.gle/LdCauvSVfbuyZyiB7" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-8 py-3 rounded-full text-sm font-semibold hover:bg-gray-200 transition-colors">Book a Free Consult</a>
                 </div>
             </div>
         </section>

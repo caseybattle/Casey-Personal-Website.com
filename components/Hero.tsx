@@ -3,12 +3,12 @@ import { Play, Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const clients = [
-    { name: "ORBIT", className: "font-serif tracking-widest font-bold" },
-    { name: "NEXUS", className: "font-sans font-black tracking-tighter" },
-    { name: "Velvet", className: "font-display italic text-2xl" },
-    { name: "VORTEX", className: "font-mono font-bold tracking-tight" },
-    { name: "Flux", className: "font-sans font-semibold italic" },
-    { name: "Sol", className: "font-serif font-medium" },
+    { name: "Sweet Bakes", className: "font-serif tracking-widest font-bold" },
+    { name: "Bookaver", className: "font-sans font-black tracking-tighter" },
+    { name: "Shavonne Styles", className: "font-display italic text-2xl" },
+    { name: "Rashunda Fit", className: "font-mono font-bold tracking-tight" },
+    { name: "Battle Labs", className: "font-sans font-semibold italic" },
+    { name: "CLX Studios", className: "font-serif font-medium" },
   ];
 
   return (
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
         <div className="flex flex-col justify-center animate-fade-in order-1">
           <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 px-4 py-1.5 rounded-full w-fit mb-8 animate-fade-in">
             <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></div>
-            <span className="text-[10px] font-bold tracking-widest uppercase text-red-400">Booking for Jan '26 - 2 Spots Left</span>
+            <span className="text-[10px] font-bold tracking-widest uppercase text-red-400">Now Accepting New Clients</span>
           </div>
 
           <h1
@@ -93,8 +93,8 @@ const Hero: React.FC = () => {
                   </div>
                 </div>
                 <div className="text-right">
-                  <h3 className="text-5xl font-medium tracking-tighter text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">50+</h3>
-                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mt-1">Successful Launches</p>
+                  <h3 className="text-5xl font-medium tracking-tighter text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">5+</h3>
+                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mt-1">Client Projects</p>
                 </div>
               </div>
 
